@@ -1,10 +1,8 @@
 ---
-title: Overview
-linkTitle: Overview
+title: Platform Overview
+linkTitle: Platform Overview
 weight: "1"
-description: 'Here''s where your user finds out if your project is for them.
-
-'
+description: Understand the platform architecture and deployment model
 
 ---
 {{% pageinfo %}}
