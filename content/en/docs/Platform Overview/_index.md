@@ -38,3 +38,11 @@ SiteWhere tenants run in isolated tenant engines that execute separately within 
 ### Data Isolation
 Tenants can use separate database instances or even different database types. They can also be configured to coexist in the same database instance while still using separate logical databases. Tenants do not share data pipelines, but rather have separate Kafka topics that ensure that data is never comingled. This approach allows multiple tenants to run in the same microservice container, but with guarantees that no tenants can interact with data from other tenants.
 
+### Customers vs Tenants
+Having dedicated resources for tenants can be expensive in terms of memory and processing resources, so SiteWhere also offers the concept of customers within each tenant. Customers allow data to be differentiated within a tenant, but without having a separate dedicated database and pipelines. In cases where colocated data is acceptable, the tenant can have any number of customers, which share the same database and processing pipeline. This allows the best of both worlds in terms of security and scalability.
+
+## Identity Management
+Managing authentication and authorization for system users is complex and error-prone when writing an implementation from scratch. Rather than reinventing the wheel, SiteWhere delegates identity management to [Keycloak](https://www.keycloak.org/). Keycloak is a full-featured, hardened identity and access management system that is used by many large companies.
+
+The SiteWhere cluster infrastructure includes a Keycloak instance and each SiteWhere instance in a cluster can have its own Keycloak realm and associated users. Instances may also be configured to share realms in order to have a common set of users across instances. Using Keycloak allows third-party applications to use SiteWhere as in identity provider via protocols such as OpenID Connect. This supports easy implementation of single sign-on for applications running on top of the SiteWhere platform.
+
