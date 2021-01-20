@@ -1,16 +1,28 @@
 ---
-title: "Deployment Guide"
-date: 2021-01-20T17:41:08-03:00
-weight: 2
-description: >
-  This guide will help you deploy SiteWhere 3.0.
+title: Deployment Guide
+date: 2021-01-20T17:41:08.000-03:00
+weight: "2"
+description: 'This guide will help you deploy SiteWhere 3.0.
+
+'
+
 ---
+SiteWhere Control CLI `swctl` is a client-side tool that let you control the installation of SiteWhere components in a Kubernetes Cluster and manage the lifecycle of SiteWhere Instances.
 
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
+## Installation
 
-For many projects, users may not need much information beyond the information in the [Overview](/docs/overview/), so this section is **optional**. However if there are areas where your users will need a more detailed understanding of a given term or feature in order to do anything useful with your project (or to not make mistakes when using it) put that information in this section. For example, you may want to add some conceptual pages if you have a large project with many components and a complex architecture.
+### Linux install
 
-Remember to focus on what the user needs to know, not just what you think is interesting about your project! If they don’t need to understand your original design decisions to use or contribute to the project, don’t put them in, or include your design docs in your repo and link to them. Similarly, most users will probably need to know more about how features work when in use rather than how they are implemented. Consider a separate architecture page for more detailed implementation and system design information that potential project contributors can consult.
+    curl -L https://github.com/sitewhere/swctl/releases/latest/download/swctl.linux.amd64 -o swctl && \ 
+    chmod +x ./swctl && sudo mv ./swctl /usr/local/bin/swctl
 
+### macOS Install
+
+\`\`\`bash
+
+    curl -L https://github.com/sitewhere/swctl/releases/latest/download/swctl.darwin.amd64 -o swctl && \
+    chmod +x ./swctl && sudo mv ./swctl /usr/local/bin/swctl
+
+### Windows Install
+
+    curl -L https://github.com/sitewhere/swctl/releases/latest/download/swctl.windows.amd64.exe -o swctl.exe
