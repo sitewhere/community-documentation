@@ -213,6 +213,24 @@ Flags:
 
 ### delete tenant
 
+Use this command to delete a Tenant of a SiteWhere Instance.
+
+```command
+Usage:
+  swctl delete tenant [NAME] [flags]
+
+Flags:
+  -h, --help              help for tenant
+  -i, --instance string   Instance name
+  -o, --output format     prints the output in the specified format. Allowed values: table, json, yaml (default table)
+```
+
+For example, to delete a tenant with name `tenant2` for instance `sitewhere` use:
+
+```command 
+swctl delete tenant tenant2 --instance=sitewhere
+```
+
 ### version
 
 Version will output the current build information of **swctl**.
