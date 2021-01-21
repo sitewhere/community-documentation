@@ -172,3 +172,29 @@ or, if a hostname was assigned, use:
 ```console
 kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].hostname}'
 ```
+
+### create tenant
+
+### delete instance
+
+### delete tenant
+
+### version
+
+Version will output the current build information of **swctl*.
+
+```command
+Usage:
+  swctl version [flags]
+
+Flags:
+  -h, --help              help for version
+      --short             print the version number
+      --template string   template for version string format
+```
+
+This is an example of the output produced by the command `swctl version`.
+
+```command
+version.BuildInfo{Version:"v0.4.1", GitCommit:"26f97df7bd9f124d8e2c2f76d6ed0829bc4cc4c9", GitTreeState:"dirty", GoVersion:"go1.15.7"}
+```
