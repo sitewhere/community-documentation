@@ -66,6 +66,7 @@ Usage:
 
 Flags:
   -h, --help             help for install
+  -m, --minimal          Install minimal infrastructure.
   -o, --output format    prints the output in the specified format. Allowed values: table, json, yaml (default table)
       --skip-crd         Skip Custom Resource Definition installation.
       --skip-infra       Skip Infrastructure installation.
@@ -117,3 +118,57 @@ SiteWhere 3.0 Uninstalled
 
 This means that **swctl** has uninstall the core components of SiteWhere CE 3.0 from your Kubernetes cluster.
 If the `--purge` flags has been used, the Namepace `sitewhere-system` would have beed removed too.
+
+### create instance
+
+Use this command to create an Instance of SiteWhere.
+For example, to create an instance with name "sitewhere" use:
+
+  swctl create instance sitewhere
+
+To create an instance with the minimal profile use:
+
+```command
+swctl create instance sitewhere -m
+```
+
+```command
+Usage:
+  swctl create instance [NAME] [flags]
+
+Flags:
+  -c, --config-template string    Configuration template. (default "default")
+  -x, --dateset-template string   Dataset template. (default "default")
+  -d, --debug                     Debug mode.
+  -h, --help                      help for instance
+  -m, --minimal                   Minimal installation.
+  -n, --namespace string          Namespace of the instance.
+  -o, --output format             prints the output in the specified format. Allowed values: table, json, yaml (default table)
+      --registry string           Docker image registry. (default "docker.io")
+  -r, --replicas int32            Number of replicas (default 1)
+      --skip-istio-inject         Skip Istio Inject namespace label.
+  -t, --tag string                Docker image tag. (default "3.0.1")
+````
+
+This is an example of the output produced by the command `swctl create instance sitewhere`.
+
+```command
+INSTANCE        STATUS   
+sitewhere       Installed
+```
+
+This means that **swctl** has create an instace named `sitewhere`. All the resources for this instance will
+be create under the Namespace `sitewhere`. Also the URL path for accessing the instance will be `sitewhere`. So,
+if your cluster Istio Ingress URL is `http://mycluser:80`, for accessing this instance you need to address `http://mycluser:80/sitewhere`.
+
+To find the IP address of the Istio Ingress Gateway Host use:
+
+```console
+kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
+````
+
+or, if a hostname was assigned, use:
+
+```console
+kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].hostname}'
+```
