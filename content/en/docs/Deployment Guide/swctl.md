@@ -175,13 +175,47 @@ kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadB
 
 ### create tenant
 
+Use this command to create a Tenant in SiteWhere Instance.
+
+```command
+Usage:
+  swctl create tenant [NAME] [flags]
+
+Flags:
+  -t, --authenticationToken string     AuthenticationToken
+  -u, --authorizedUserIds strings      Authorized User Ids
+  -c, --configurationTemplate string   Configuration Template (default "default")
+  -d, --datasetTemplate string         Dataset Template (default "construction")
+  -h, --help                           help for tenant
+  -i, --instance string                Instance name
+  -o, --output format                  prints the output in the specified format. Allowed values: table, json, yaml (default table)
+```
+
+For example, to create a tenant with name `tenant2` in the instance `sitewhere` use:
+
+```command
+swctl create tenant tenant2 --instance=sitewhere
+```
+
 ### delete instance
+
+Use this command to delete a SiteWhere Instance. Use can use purge flag to remove the namespace of the instance.
+
+```command
+Usage:
+  swctl delete instance [NAME] [flags]
+
+Flags:
+  -h, --help            help for instance
+  -o, --output format   prints the output in the specified format. Allowed values: table, json, yaml (default table)
+  -p, --purge           Purge instance.
+```
 
 ### delete tenant
 
 ### version
 
-Version will output the current build information of **swctl*.
+Version will output the current build information of **swctl**.
 
 ```command
 Usage:
