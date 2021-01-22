@@ -95,3 +95,46 @@ label-generation      label-generation
 outbound-connectors   outbound-connectors
 schedule-management   schedule-management
 ```
+
+If your cluster Istio Ingress URL is `http://mycluser:80`, for accessing this
+instance you need to address `http://mycluser:80/sitewhere`.
+
+To find the IP address of the Istio Ingress Gateway Host use:
+
+```console
+kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
+````
+
+or, if a hostname was assigned, use:
+
+```console
+kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].hostname}'
+```
+
+## Delete SiteWhere Image
+
+To delete an instance of your cluster use the command: 
+
+```command
+swctl delete instance [NAME] [flags]
+```
+
+For example, if we want to delete the instance `sitewhere`, we would need to execute:
+
+```command
+swctl delete instance sitewhere
+```
+
+If you want to delete all the data and extra resources, add `--purge` flag. This flag will delete
+the Namespace `sitewhere` alone with all its resources.
+
+## Uninstall SiteWhere 3.0 CE
+
+To uninstall SiteWhere insfrastucture components using **swctl**, execute the following command:
+
+```command
+swctl uninstall
+```
+
+If you want to delete all the data and extra resources, add `--purge` flag. This flag will delete
+the Namespace `sitewhere-system` alone with all its resources.
