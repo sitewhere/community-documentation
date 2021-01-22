@@ -111,7 +111,7 @@ or, if a hostname was assigned, use:
 kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].hostname}'
 ```
 
-## Delete SiteWhere Image
+## Delete SiteWhere Instance
 
 To delete an instance of your cluster use the command: 
 
