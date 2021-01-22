@@ -2,35 +2,36 @@
 title: Deployment Guide
 date: 2021-01-20T17:41:08.000-03:00
 weight: "2"
-description: 'This guide will help you deploy SiteWhere 3.0.
-
-'
+description: 'Deploy SiteWhere infrastructure and instances to Kubernetes'
 
 ---
-# SiteWhere 3.0 Deployment Guide
-
-This pages guides you in the deployment of SiteWhere 3.0 in a Kubernetes Cluster
+SiteWhere installation includes two steps, installation of the infrastructure and installation of instances which run on top of that infrastructure. The initial infrastructure installation deploys Kubernetes [custom resource definitions](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) (CRDs) for the SiteWhere model, a set of resource templates that are used as the default configuration for the system, and a set of infrastructure components which serve as a platform for instances to run on. Multiple SiteWhere instances may be deployed on top of the common infrastructure, each instance composed of many microservices which handle processing for the instance based on a configuration customized for that instance.
 
 ## Prerequisites
 
 * Kubernetes Cluster 1.16+
 * [Istio](https://istio.io) 1.8+ Installed in your cluster. Check Istio setup [documentation](https://istio.io/latest/docs/setup/).
-* [swctl](./swctl/) v0.4.2 or later.
+* [swctl](https://github.com/sitewhere/swctl) v0.4.2 or later.
 
-## Install SiteWhere 3.0 CE
+## Install SiteWhere Infrastructure
 
-SiteWhere 3.0 CE requieres it insfrastucture components installed on the Kubernetes cluster you are going to deploy your instances.
-After you instanall SiteWhere insfrastucture components you can deploy one or more instances in the cluster.
-
-To install SiteWhere insfrastucture components using **swctl**, execute the following command:
+SiteWhere requires that the Kubernetes model and infrastructure components are installed on the Kubernetes cluster before deploying instances. To install SiteWhere insfrastucture components using [swctl](./swctl/), execute the following command:
 
 ```command
 swctl install
 ```
 
-This command will install all the necesary components (i.e. SiteWhere CRDs, SiteWhere Templantes, SiteWhere Operator, etc) for
-SiteWhere to deploy instances in your cluster. All these components will be allocated in the Namespace `sitewhere-system`, so
-if you list the services in this Namespace, you should probably see something like this
+This command will install all the necessary infrastructure components including:
+* SiteWhere CRDs
+* SiteWhere configuration templates
+* SiteWhere Kubernetes operator
+* Apache Kafka
+* PostgreSQL database
+* InfluxDB database
+* Redis cache
+* Apache Nifi
+
+These components will be allocated in the `sitewhere-system` namespace, so listing the services will result in something like this:
 
 ```console
 kubectl get svc -n sitewhere-system
@@ -54,21 +55,21 @@ sitewhere-zookeeper                            ClusterIP      10.109.163.117   <
 sitewhere-zookeeper-headless                   ClusterIP      None             <none>        2181/TCP,3888/TCP,2888/TCP      14s
 ```
 
-After this step is completed, you need to create an **instance** to you cluster. To create an instance, use the command:
+## Install SiteWhere Instance
+
+After the infrastructure components have been successfully installed, you can add an **instance** to you cluster. To create an instance, use the command:
 
 ```command
 swctl create instance [NAME] [flags]
 ```
 
-For example, if we want to create an instance called `sitewhere`, we would need to execute:
+For example, if we want to create an instance named `sitewhere`, we would need to execute:
 
 ```command
 swctl create instance sitewhere
 ```
 
-This command will create a Namespace with the same name of the instance, and the SiteWhere Operator
-will create all the Kubernetes objects for the instance in this Namespace. After a few minutes,
-you can query the cluster for the instance status using:
+This command will create a namespace with the same name as the instance, and the SiteWhere operator will create all the Kubernetes objects for the instance in this namespace. After a few minutes, you can query the cluster for the instance status using:
 
 ```command
 kubectl get swi sitewhere
@@ -113,28 +114,26 @@ kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadB
 
 ## Delete SiteWhere Instance
 
-To delete an instance of your cluster use the command: 
+To delete a SiteWhere instance from your cluster use the command: 
 
 ```command
 swctl delete instance [NAME] [flags]
 ```
 
-For example, if we want to delete the instance `sitewhere`, we would need to execute:
+For example, if we want to delete the instance `sitewhere`, we would execute:
 
 ```command
 swctl delete instance sitewhere
 ```
 
-If you want to delete all the data and extra resources, add `--purge` flag. This flag will delete
-the Namespace `sitewhere` alone with all its resources.
+To delete all the data and extra resources, add `--purge` flag. This flag will delete the namespace `sitewhere` along with all of its resources.
 
-## Uninstall SiteWhere 3.0 CE
+## Uninstall SiteWhere Infrastructure
 
-To uninstall SiteWhere insfrastucture components using **swctl**, execute the following command:
+To uninstall SiteWhere insfrastucture components using `swctl`, execute the following command:
 
 ```command
 swctl uninstall
 ```
 
-If you want to delete all the data and extra resources, add `--purge` flag. This flag will delete
-the Namespace `sitewhere-system` alone with all its resources.
+To delete all the data and extra resources, add `--purge` flag. This flag will delete the Namespace `sitewhere-system` along with all its resources.

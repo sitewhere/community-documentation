@@ -2,10 +2,7 @@
 title: SiteWhere Control CLI
 linkTitle: SiteWhere Control CLI
 date: 2021-01-20
-description: 'This page describes the installation of **swctl**, the SiteWhere Control
-  CLI.
-
-'
+description: 'Install `swctl`, the SiteWhere Control CLI to manage SiteWhere deployments'
 
 ---
 SiteWhere Control CLI `swctl` is a client-side tool that let you control the installation of SiteWhere components in a Kubernetes Cluster and manage the lifecycle of SiteWhere Instances.
