@@ -15,7 +15,7 @@ This pages guides you in the deployment of SiteWhere 3.0 in a Kubernetes Cluster
 
 * Kubernetes Cluster 1.16+
 * [Istio](https://istio.io) 1.8+ Installed in your cluster. Check Istio setup [documentation](https://istio.io/latest/docs/setup/).
-* [swctl](./swctl.md) v0.4.2 or later.
+* [swctl](./swctl/) v0.4.2 or later.
 
 ## Install SiteWhere 3.0 CE
 
