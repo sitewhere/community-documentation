@@ -5,7 +5,7 @@ weight: "100"
 description: Track new features and bug fixes added in SiteWhere releases
 
 ---
-#### **SiteWhere 3.0.1**
+#### [**SiteWhere 3.0.1**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.1)
 
 ##### _Bugs Fixed_
 * Instance management microservice not retrying when Keycloak not available ([#923](https://github.com/sitewhere/sitewhere/issues/923))
@@ -13,7 +13,7 @@ description: Track new features and bug fixes added in SiteWhere releases
 
 ---
 
-#### **SiteWhere 3.0.0**
+#### [**SiteWhere 3.0.0**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.0)
 
 ##### _Features_
 * Initial SiteWhere 3.0 release.
