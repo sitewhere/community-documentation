@@ -144,7 +144,7 @@ Flags:
       --registry string           Docker image registry. (default "docker.io")
   -r, --replicas int32            Number of replicas (default 1)
       --skip-istio-inject         Skip Istio Inject namespace label.
-  -t, --tag string                Docker image tag. (default "latest")
+  -t, --tag string                Docker image tag. (default "3.0.1")
 ````
 
 This is an example of the output produced by the command `swctl create instance sitewhere`.

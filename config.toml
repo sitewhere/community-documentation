@@ -53,12 +53,12 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "SiteWhere | Cloud Native IoT Application Enablement Platform"
+title = "SiteWhere"
 description = "Cloud Native Internet of Things Application Enablement Platform"
 languageName ="English"
 weight = 1
 [languages.es]
-title = "SiteWhere | Cloud Native IoT Application Enablement Platform"
+title = "SiteWhere"
 description = "Cloud Native Internet of Things Application Enablement Platform"
 languageName ="Español"
 weight = 2
