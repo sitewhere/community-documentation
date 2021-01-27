@@ -1,6 +1,6 @@
 ---
 title: Guía de Despliegue
-linkTitle: Deployment Guide
+linkTitle: Guía de Despliegue
 weight: "2"
 description: Desplegar la infrastructura e Instancias de SiteWhere en Kubernetes 
 ---

@@ -1,6 +1,6 @@
 ---
 title: Guía de Configuración
-linkTitle: Configuration Guide
+linkTitle: Guía de Configuración
 weight: "3"
 description: Configurar SiteWhere para procesar cargas de IoT
 ---

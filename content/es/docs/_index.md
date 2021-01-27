@@ -1,6 +1,6 @@
 ---
 title: Documentación
-linkTitle: Documentation
+linkTitle: Documentación
 weight: "20"
 menu:
   main:
