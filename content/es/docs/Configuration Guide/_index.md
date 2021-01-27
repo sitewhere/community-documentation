@@ -1,8 +1,8 @@
 ---
-title: Configuration Guide
+title: Guía de Configuración
 linkTitle: Configuration Guide
 weight: "3"
-description: Configure SiteWhere for processing IoT workloads
+description: Configurar SiteWhere para procesar cargas de IoT
 ---
 SiteWhere is a cloud-native platform designed to run on top of a Kubernetes infrastructure. As such, it uses Kubernetes [custom resources](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) for almost all aspects of configuration. There are multiple levels of configuration in the system including instance, microservice, and tenant configuration.
 

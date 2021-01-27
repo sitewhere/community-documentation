@@ -1,8 +1,8 @@
 ---
-title: Platform Overview
+title: Descripción de la Plataforma
 linkTitle: Platform Overview
 weight: "1"
-description: Understand the SiteWhere platform architecture and deployment model
+description: Comprender la arquitectura de la plataforma SiteWhere y el modelo de implementación
 
 ---
 

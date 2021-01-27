@@ -1,8 +1,8 @@
 ---
-title: Release Notes
+title: Notas de lanzamiento
 linkTitle: Release Notes
 weight: "100"
-description: Track new features and bug fixes added in SiteWhere releases
+description: Seguimiento de nuevas funciones y correcciones de errores agregadas en las versiones de SiteWhere
 
 ---
 #### [**SiteWhere 3.0.2**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.2)

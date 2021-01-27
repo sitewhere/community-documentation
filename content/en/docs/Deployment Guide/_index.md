@@ -1,6 +1,6 @@
 ---
 title: Deployment Guide
-date: 2021-01-20T17:41:08.000-03:00
+linkTitle: Deployment Guide
 weight: "2"
 description: 'Deploy SiteWhere infrastructure and instances to Kubernetes'
 
