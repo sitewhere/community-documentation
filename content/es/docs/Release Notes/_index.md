@@ -1,6 +1,6 @@
 ---
 title: Notas de lanzamiento
-linkTitle: Release Notes
+linkTitle: Notas de lanzamiento
 weight: "100"
 description: Seguimiento de nuevas funciones y correcciones de errores agregadas en las versiones de SiteWhere
 
