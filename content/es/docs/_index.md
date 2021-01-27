@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: Documentación
 linkTitle: Documentation
 weight: "20"
 menu:
@@ -7,4 +7,4 @@ menu:
     weight: 20
 
 ---
-SiteWhere is a cloud-native Internet of Things Application Enablement Platform (AEP) that provides a modern approach to deploying IoT applications in the cloud or on-premise. The platform is designed from the ground up to run on Kubernetes and leverage the many features it provides. The documentation sections below provide an overview of the technology and how to use it.
+SiteWhere es una plataforma de habilitación de aplicaciones (AEP) de Internet de las cosas (IoT) nativa de la nube que proporciona un enfoque moderno para implementar aplicaciones de IoT en la nube o en las instalaciones. La plataforma está diseñada desde cero para ejecutarse en Kubernetes y aprovechar las numerosas funciones que ofrece. Las secciones de documentación a continuación proporcionan una descripción general de la tecnología y cómo utilizarla.
