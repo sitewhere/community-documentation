@@ -4,7 +4,7 @@ linkTitle: Guía de Configuración
 weight: "3"
 description: Configurar SiteWhere para procesar cargas de IoT
 ---
-SiteWhere es una plataforma nativa de la nube diseñada para ejecutarse sobre una infraestructura de Kubernetes. Como tal, utiliza Kubernetes [recursos personalizados] (https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) para casi todos los aspectos de la configuración. Hay varios niveles de configuración en el sistema, incluida la configuración de instancias, microservicios y arrendatarios (tenants).
+SiteWhere es una plataforma nativa de la nube diseñada para ejecutarse sobre una infraestructura de Kubernetes. Como tal, utiliza Kubernetes [recursos personalizados](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) para casi todos los aspectos de la configuración. Hay varios niveles de configuración en el sistema, incluida la configuración de instancias, microservicios y arrendatarios (tenants).
 
 ## Configuración de Instancias
 
