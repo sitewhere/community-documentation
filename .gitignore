@@ -4,3 +4,5 @@ resources/
 node_modules/
 tech-doc-hugo
 
+# Editor directories and files
+.idea
