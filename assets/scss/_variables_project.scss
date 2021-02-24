@@ -1,11 +1,33 @@
 /*
 Add styles or override variables from the theme here.
 */
-$navbar-color: #f8f9fa !default;
+$navbar-color: #F2F2F2 0% 0% no-repeat padding-box !default;
 
 
 
+.footer-color {
+ background: transparent linear-gradient(90deg, #F15A24 0%, #F25221 18%, #F53D18 45%, #FA1C0B 77%, #FF0000 100%);
+ background-repeat: no-repeat;
+  opacity: 1;
+ min-height: 400px;
+}
+.img-footer {
+ height: 100px;
+}
 
 .td-overlay--dark::after {
  //background-color: transparent !important;
+}
+
+.text-blue {
+ color: #0d5aa7;
+}
+.text-red {
+ color: #FE0502;
+}
+
+.text-wrap-in-col {
+ max-width: inherit;
+ margin-left: auto;
+ margin-right: auto;
 }
