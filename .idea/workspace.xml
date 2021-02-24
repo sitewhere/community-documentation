@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cbd81092-58e5-4be0-876d-d421728856c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-BoldItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-BoldItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-BoldItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Italic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-LightItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-LightItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-LightItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-MediumItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-MediumItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-MediumItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Myriad-Pro-Font/Myriad-Pro-Black.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Myriad-Pro-Font/Myriad-Pro-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Myriad-Pro-Font/Myriad-Pro-Light.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Myriad-Pro-Font/Myriad-Pro-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Myriad-Pro-Font/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8fd26c6fc0dc864ab2058487f2702c41/typography.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/_variables_project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_variables_project.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1oexZ2i6cNSqoLbVlfwOyxCGvrQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/en" />
+      <recent name="$PROJECT_DIR$/content/en/documentation" />
+      <recent name="$PROJECT_DIR$/themes/custom/layouts" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cbd81092-58e5-4be0-876d-d421728856c0" name="Default Changelist" comment="" />
+      <created>1613660909900</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613660909900</updated>
+      <workItem from="1613660911427" duration="1925000" />
+      <workItem from="1613670648364" duration="430000" />
+      <workItem from="1614082545869" duration="3715000" />
+      <workItem from="1614092486376" duration="3335000" />
+      <workItem from="1614102533486" duration="5259000" />
+      <workItem from="1614168209706" duration="8376000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2177" y="344" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1614172373948">
+      <screen x="1680" y="88" width="1600" height="900" />
+    </state>
+    <state x="2177" y="344" key="#com.intellij.fileTypes.FileTypeChooser/1680.88.1600.900/0.0.1680.1050@1680.88.1600.900" timestamp="1614172373948" />
+    <state x="2179" y="293" width="785" height="490" key="find.popup" timestamp="1614176221439">
+      <screen x="1680" y="88" width="1600" height="900" />
+    </state>
+    <state x="2179" y="293" width="785" height="490" key="find.popup/1680.88.1600.900/0.0.1680.1050@1680.88.1600.900" timestamp="1614176221439" />
+    <state x="2145" y="284" width="670" height="676" key="search.everywhere.popup" timestamp="1614174645955">
+      <screen x="1680" y="88" width="1600" height="900" />
+    </state>
+    <state x="2145" y="284" width="670" height="676" key="search.everywhere.popup/1680.113.1600.806/0.25.1680.1025@1680.113.1600.806" timestamp="1614173667262" />
+    <state x="2145" y="284" width="670" height="676" key="search.everywhere.popup/1680.88.1600.900/0.0.1680.1050@1680.88.1600.900" timestamp="1614174645955" />
+  </component>
+</project>

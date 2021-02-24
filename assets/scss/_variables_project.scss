@@ -2,3 +2,10 @@
 Add styles or override variables from the theme here.
 */
 
+// disable Google Fonts from Docsy
+$td-enable-google-fonts: false;
+
+.td-overlay--dark::after {
+ //background-color: transparent !important;
+}
+
