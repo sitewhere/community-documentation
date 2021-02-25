@@ -3,16 +3,16 @@ title = "SiteWhere"
 linkTitle = "SiteWhere"
 
 +++
-{{ partial “fonts/AktivGrotesk-Font/stylesheet.css” | safeCSS }}
-{{ partial “fonts/Myriad-Pro-Font/stylesheet.css” | safeCSS }}
+<link href="fonts/AktivGrotesk-Font/stylesheet.css" rel="stylesheet" />
+<link href="fonts/Myriad-Pro-Font/stylesheet.css" rel="stylesheet" />
 
-{{< blocks/cover title="" image_anchor="top" height="full" color="black" >}}
-<div class="row align-items-center" >
+{{< blocks/cover title="" image_anchor="top" height="full" color="blue" >}}
+<div class="row align-items-center mt-5 mb-5" >
 	<div class="col">
 
 	</div>
 	<div class="col">
-		<div class="pb-5">
+		<div class="pb-5 mt-5">
 			<div class="section-1-title">Cloud Native IoT Application</div>
 			<div class="section-1-sub-title">Enablement Platform</div>
 			<div class="section-1-text">Deploy customized, portable IoT solutions including infraestructure and services to any cloud that supports Kubernetes.</div>
@@ -54,14 +54,14 @@ linkTitle = "SiteWhere"
 <section id="third-section" style="" class="row td-cover-block js-td-cover third-background  -bg-blue">
 	<div class="container-fluid">
 		<div class="col-7">
-			<div class="row text-center mb-5">
-				<img src="/images/home/cloud_lock.png" alt="" height="200" object-fit="cover" style="margin-left: auto; margin-right: auto; width: 50%;"/>
+			<div class="d-flex justify-content-center mb-5">
+				<img src="/images/home/cloud_lock.png" alt="" class="logo-cloud-lock"/>
 			</div>
-			<div class="text-center text-dark mb-5">
+			<div class="text-center section-1-title mb-5">
 				Avoid <span class="text-red">Lock-In</span> and <span class="text-red">Deploy</span>
 					to Any Cloud</span>
 			</div>
-			<div class="text-black text-dark text-center text-wrap-in-col">
+			<div class="section-1-text text-center text-wrap-in-col">
 				<p>Prevent your IoT solution from being tied to a single cloud provider.
 				SiteWhere embraces the cloud-native ecosystem of Kubernetes and may be deployed to
 				any provider that supports Kubernetes. Benefit from the huge ecosystem of projects

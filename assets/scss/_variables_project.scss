@@ -2,16 +2,35 @@
 Add styles or override variables from the theme here.
 */
 $navbar-color: #F2F2F2 0% 0% no-repeat padding-box !default;
-
-
-// disable Google Fonts from Docsy
-$td-enable-google-fonts: false;
-
-.td-overlay--dark::after {
- //background-color: transparent !important;
+/**
+fonts home
+ */
+.font-myriad-regular {
+ font-family: "Myriad Pro";
+ font-weight: 400;
+}
+.section-1-title {
+ @extend .font-myriad-regular;
+ color: #151A3A;
+ font-size: 2.536rem;
+ margin-bottom: 0;
 }
 
+.section-1-sub-title {
+ @extend .font-myriad-regular;
+ color: #3682EA;
+ font-size: 2.536rem;
+}
 
+.section-1-text {
+ @extend .font-myriad-regular;
+ color: #000000;
+ font-size: 1.313rem;
+ margin-bottom: 0;
+}
+/**
+Style footer
+ */
 .footer-color {
  background: transparent linear-gradient(90deg, #F15A24 0%, #F25221 18%, #F53D18 45%, #FA1C0B 77%, #FF0000 100%);
  background-repeat: no-repeat;
