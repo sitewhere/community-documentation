@@ -3,21 +3,34 @@ title = "SiteWhere"
 linkTitle = "SiteWhere"
 
 +++
+{{ partial “fonts/AktivGrotesk-Font/stylesheet.css” | safeCSS }}
+{{ partial “fonts/Myriad-Pro-Font/stylesheet.css” | safeCSS }}
 
 {{< blocks/cover title="" image_anchor="top" height="full" color="black" >}}
-<div class="row mt-4 text-right">
-	<div class="col-6">
+<div class="row align-items-center" >
+	<div class="col">
 
 	</div>
-	<div class="col-6 sm-order-2">
-		<h1>Cloud-native IoT Application</h1>
-		<h1 class="mt-5 text-blue"> Enablement Platform</h1>
-		<div class="row text-black mt-4">
-			Deploy customized, portable IoT solutions including infraestructure and services to any cloud that supports Kubernetes.
+	<div class="col">
+		<div class="pb-5">
+			<div class="section-1-title">Cloud Native IoT Application</div>
+			<div class="section-1-sub-title">Enablement Platform</div>
+			<div class="section-1-text">Deploy customized, portable IoT solutions including infraestructure and services to any cloud that supports Kubernetes.</div>
 		</div>
-		<div>
-			<img src="/images/home/kubernetes.png" height="250"/>
+
+		<div class="logo-container">
+			<div class="d-flex justify-content-center">
+				<img src="/images/kubernetes_logo.png" class="logo">
+			</div>
+			<div class="d-flex justify-content-around pt-5">
+				<img src="/images/google_cloud_logo.png" class="logo-row">
+				<img src="/images/amazon_logo.png" class="logo-row">
+				<img src="/images/azure_logo.png" class="logo-row">
+			</div>
 		</div>
+
+	</div>
+</div>
 	<!--<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
 		Learn More <i class="fas fa-arrow-alt-circle-right ml-2"></i>
 	</a>
