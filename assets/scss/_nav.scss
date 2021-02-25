@@ -1,9 +1,50 @@
 //
 // Main navbar
 //
-.signin-link {
-    color: #e7040f !important;
+.menu-style {
+    background-color: #F2F2F2;
+    height: 73px
 }
+.logo-menu {
+    width: 189px;
+    height: 50px;
+}
+.menu-items-font {
+    font-family: "Aktiv Grotesk Corp";
+    font-weight: 300;
+    color: #000000 !important;
+    font-size: 0.8rem;
+}
+
+.menu-items-font-red {
+    font-family: "Aktiv Grotesk Corp";
+    font-weight: 300;
+    color: #FA210F !important;
+    font-size: 0.8rem;
+}
+
+.btn::before {
+    background-color: transparent;
+}
+.btn {
+    border-radius: unset;
+}
+.btn:hover {
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #151A3A;
+    border-radius: unset;
+    filter: brightness(1);
+}
+
+.btn-red:hover {
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #FA210F;
+    filter: brightness(1);
+}
+
+
 .td-navbar-cover {
     background: $navbar-color;
 
