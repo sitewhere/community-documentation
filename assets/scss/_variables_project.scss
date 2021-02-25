@@ -4,6 +4,13 @@ Add styles or override variables from the theme here.
 $navbar-color: #F2F2F2 0% 0% no-repeat padding-box !default;
 
 
+// disable Google Fonts from Docsy
+$td-enable-google-fonts: false;
+
+.td-overlay--dark::after {
+ //background-color: transparent !important;
+}
+
 
 .footer-color {
  background: transparent linear-gradient(90deg, #F15A24 0%, #F25221 18%, #F53D18 45%, #FA1C0B 77%, #FF0000 100%);
