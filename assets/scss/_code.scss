@@ -79,16 +79,9 @@
     height: 100vh;
 }
 .seventh-background {
-    background-image:url('/images/background/seventh_background.png');
+   // background-image:url('/images/background/seventh_background.png');
+    background: transparent linear-gradient(0deg, #1B1432 0%, #151A3A 100%) 0% 0% no-repeat padding-box;
     height: 91vh;
-}
-
-.landing{
-    background-image: url('/images/home_seccion_1.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
 }
 
 
