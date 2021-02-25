@@ -28,6 +28,19 @@ fonts home
  font-size: 1.313rem;
  margin-bottom: 0;
 }
+.section-title-white {
+ @extend .font-myriad-regular;
+ color: #ffffff;
+ font-size: 2.536rem;
+ margin-bottom: 0;
+}
+.section-text-white {
+ @extend .font-myriad-regular;
+ color: #ffffff;
+ font-size: 1.313rem;
+ margin-bottom: 0;
+}
+
 /**
 Style footer
  */
@@ -45,6 +58,9 @@ Style footer
  //background-color: transparent !important;
 }
 
+.text-green {
+ color: #45B055;
+}
 .text-blue {
  color: #3682EA;
 }

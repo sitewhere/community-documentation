@@ -64,7 +64,10 @@
     height: 68vh;
 }
 .fourth-background {
-    background-image:url('/images/background/fourth_background.png');
+    //background-image:url('/images/background/fourth_background.png');
+    background: transparent linear-gradient(0deg, #1B1432 0%, #151A3A 100%) 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
     height: 108vh;
 }
 .fifth-background {
@@ -106,4 +109,20 @@
 .logo-cloud-lock {
     width: 287px;
     height: 167px;
+}
+.logo-apache {
+    width: 287px;
+    height: 167px;
+}
+.logo-native-cloud {
+    width: 308px;
+    height: 200px;
+}
+.logo-helm {
+    width: 200px;
+    height: 190px;
+}
+.logo-open-source {
+    width: 375px;
+    height: 375px;
 }
