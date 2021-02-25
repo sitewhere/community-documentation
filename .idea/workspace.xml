@@ -2,48 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbd81092-58e5-4be0-876d-d421728856c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-BoldItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-BoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-BoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-LightItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-LightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-LightItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-MediumItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-MediumItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-MediumItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/AktivGroteskCorp-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/AktivGrotesk-Font/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Myriad-Pro-Font/Myriad-Pro-Black.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Myriad-Pro-Font/Myriad-Pro-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Myriad-Pro-Font/Myriad-Pro-Light.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Myriad-Pro-Font/Myriad-Pro-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Myriad-Pro-Font/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8fd26c6fc0dc864ab2058487f2702c41/typography.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/_variables_project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_variables_project.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +53,7 @@
       <workItem from="1614082545869" duration="3715000" />
       <workItem from="1614092486376" duration="3335000" />
       <workItem from="1614102533486" duration="5259000" />
-      <workItem from="1614168209706" duration="8376000" />
+      <workItem from="1614168209706" duration="14830000" />
     </task>
     <servers />
   </component>
