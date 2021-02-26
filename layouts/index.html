@@ -9,9 +9,16 @@
 
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 	<!-- Fonts -->
 	<link href="fonts/AktivGrotesk-Font/stylesheet.css" rel="stylesheet" />
 	<link href="fonts/Myriad-Pro-Font/stylesheet.css" rel="stylesheet" />
+	<!-- Carousel -->
+<!--	<link rel="stylesheet" href="carousel/css/normalize.css">-->
+<!--	<link rel="stylesheet" href="carousel/css/foundation.min.css">-->
+<!--	<link rel="stylesheet" href="carousel/css/style.css">-->
+
+	<link rel="stylesheet" href="carousel/css/jquery.circular-carousel.css">
 </head>
 
 <body>
@@ -98,7 +105,52 @@
 		</div>
 	</section>
 
+	<section id="seventh-section" class="section-7 row td-cover-block js-td-cover td-overlay
+ -bg-blue">
+		<div class="d-inline-flex flex-row justify-content-around" align="center">
+
+			<div class=" align-self-center" align="center" >
+				<div class="controls">
+					<a href="#" class="previous"><i class="bi bi-chevron-left arrows"></i></a>
+				</div>
+			</div>
+			<div class="align-self-center" align="center" style="height: 300px; width: 820px;">
+				<div>
+					<ul class="carousel">
+						<li class="item active"><img src="/images/logo_google_cloud.png" class="logo-row"></li>
+						<li class="item"><img src="/images/logo_google_cloud.png" class="logo-row"></li>
+						<li class="item"><img src="/images/logo_google_cloud.png" class="logo-row"></li>
+						<li class="item"><img src="/images/logo_google_cloud.png" class="logo-row"></li>
+						<li class="item"><img src="/images/logo_google_cloud.png" class="logo-row"></li>
+						<li class="item"><img src="/images/logo_google_cloud.png" class="logo-row"></li>
+						<li class="item"><img src="/images/logo_google_cloud.png" class="logo-row"></li>
+						<li class="item"><img src="/images/logo_google_cloud.png" class="logo-row"></li>
+						<li class="item"><img src="/images/logo_google_cloud.png" class="logo-row"></li>
+						<li class="item"><img src="/images/logo_google_cloud.png" class="logo-row"></li>
+						<li class="item"><img src="/images/logo_google_cloud.png" class="logo-row"></li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="align-self-center" align="center">
+				<div class="controls">
+					<a href="#" class="next"><i class="bi bi-chevron-right arrows" ></i></a>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
 </div>
+
+
+<!-- Carousel JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="carousel/js/jquery.circular-carousel.js"></script>
+
+<script src="carousel/js/script.js"></script>
 
 </body>
 
@@ -188,5 +240,22 @@
 		height: 100px;
 	}
 	/*</seccion contenido>*/
+
+	.section-7{
+		background-color: #151A3A;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 70vh;
+	}
+
+	/*<carousel>*/
+	.arrows{
+		font-size: 2rem;
+		color: #B3B3B3;
+	}
+	/*</carousel>*/
+
+
 </style>
 </html>
