@@ -8,10 +8,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 		</div>
-<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">-->
-       <!-- <a class="navbar-brand" href="{{ .Site.Home.RelPermalink }}">
-		<span class="navbar-logo">{{ if .Site.Params.ui.navbar_logo }}{{ with resources.Get "icons/logo.svg" }}{{ ( . | minify).Content | safeHTML }}{{ end }}{{ end }}</span>
-	</a>-->
+
 	<div class="collapse navbar-collapse justify-content-end" id="main_navbar">
 		<ul class="navbar-nav me-auto lg-0">
 			{{ $p := . }}
@@ -44,9 +41,11 @@
 				</div>
 			</li>
 			{{ end }}
-			<li class=" nav-item pt-3" >
-				<a class="nav-link btn" target="_blank" href="https://portal.sitewhere.io">
-					<span class="menu-items-font-red">Enterprise</span></a></li>
+			<li class="nav-item pt-3 btn-red" >
+				<a class="nav-link" target="_blank" href="https://portal.sitewhere.io">
+					<span class="menu-items-font-red">Enterprise</span>
+				</a>
+			</li>
 		</ul>
 	</div>
 	</div>
