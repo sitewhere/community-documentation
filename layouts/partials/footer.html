@@ -1,5 +1,9 @@
 {{ $links := .Site.Params.links }}
-<link href="fonts/AktivGrotesk-Font/stylesheet.css" rel="stylesheet" />
+
+{{ $title := (.Title | title ) }}
+{{ $siteTitle := (.Site.Title) }}
+
+{{ if eq $siteTitle $title }}
 <footer class="bg-secondary py-4 row footer-color d-print-none" >
   <div class="container-fluid mx-sm-5 mt-4">
     <div class="row">
@@ -28,7 +32,7 @@
       <div class="col-4 col-sm-3 text-xs-center ">
         <div class="row mt-5">
           {{ with resources.Get "icons/logoWhite.svg" }}
-          <img class="img-footer" src="/images/footer/azulH.svg" /><!--{{ ( . | minify).Content | safeHTML }}-->
+          <img class="img-footer" src="/images/logos/azulH.svg" /><!--{{ ( . | minify).Content | safeHTML }}-->
         <div class="row footer-brand-text mt-4">
           Sitewhere t is an enterprise IoT platform that makes it easy to build connected solutions that produce real-time results.
         </div>
@@ -47,6 +51,37 @@
     </div>
   </div>
 </footer>
+{{ else }}
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        {{ with $links }}
+        {{ with index . "user"}}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        {{ with $links }}
+        {{ with index . "developer"}}
+        {{ template "footer-links-block"  . }}
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        {{ with .Site.Params.copyright }}<small class="text-white">&copy; {{ now.Year}} {{ .}} {{ T "footer_all_rights_reserved" }}</small>{{ end }}
+        {{ with .Site.Params.privacy_policy }}<small class="ml-1"><a href="{{ . }}" target="_blank">{{ T "footer_privacy_policy" }}</a></small>{{ end }}
+        {{ if not .Site.Params.ui.footer_about_disable }}
+        {{ with .Site.GetPage "about" }}<p class="mt-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</footer>
+
+{{ end }}
+
 {{ define "footer-links-block" }}
 <ul class="list-inline mb-0">
   {{ range . }}
@@ -58,3 +93,6 @@
   {{ end }}
 </ul>
 {{ end }}
+
+
+
