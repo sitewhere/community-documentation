@@ -6,7 +6,7 @@ Add styles or override variables from the theme here.
 fonts home
  */
 .font-myriad-regular {
- font-family: "Myriad Pro";
+ font-family: "Myriad Pro", serif;
  font-weight: 400;
 }
 
@@ -45,14 +45,14 @@ fonts home
 }
 // font footer
 .footer-white-font {
- font-family: "Aktiv Grotesk Corp";
+ font-family: "Aktiv Grotesk Corp", serif;
  font-weight: 700;
  color: #FFFFFF !important;
  font-size:1.313rem;
 
 }
 .footer-brand-text{
- font-family: "Aktiv Grotesk Corp";
+ font-family: "Aktiv Grotesk Corp", serif;
  font-weight: 400;
  color: #FFFFFF !important;
  font-size: 0.8rem;
@@ -62,9 +62,8 @@ fonts home
 Style footer
  */
 .footer-color {
- background: transparent linear-gradient(90deg, #F15A24 0%, #F25221 18%, #F53D18 45%, #FA1C0B 77%, #FF0000 100%);
- background-repeat: no-repeat;
-  opacity: 1;
+ background: transparent linear-gradient(90deg, #F15A24 0%, #F25221 18%, #F53D18 45%, #FA1C0B 77%, #FF0000 100%) no-repeat;
+ opacity: 1;
  min-height: 400px;
 }
 .img-footer {
