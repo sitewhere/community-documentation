@@ -15,8 +15,9 @@
 			</button>
 		</div>
 
-	<div class="collapse navbar-collapse justify-content-end" id="main_navbar">
-		<ul class="navbar-nav me-auto lg-0">
+		<div>
+			<div class="collapse navbar-collapse justify-content-end" id="main_navbar">
+		<ul class="navbar-nav me-auto lg-0" style="height: 60px;">
 			{{ $p := . }}
 			{{ range .Site.Menus.main }}
 			<li class="nav-item pt-3 btn">
@@ -54,6 +55,7 @@
 			</li>
 		</ul>
 	</div>
+			</div>
 	</div>
 </nav>
 {{ else }}
