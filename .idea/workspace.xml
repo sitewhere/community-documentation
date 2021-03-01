@@ -4,7 +4,9 @@
     <list default="true" id="cbd81092-58e5-4be0-876d-d421728856c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8fd26c6fc0dc864ab2058487f2702c41/typography.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/_code.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_code.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/en/_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/home/kubernetes_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/logos/logo_kubernetes.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/images/logos" />
       <recent name="$PROJECT_DIR$/content/en" />
       <recent name="$PROJECT_DIR$/content/en/documentation" />
       <recent name="$PROJECT_DIR$/themes/custom/layouts" />
@@ -54,6 +57,8 @@
       <workItem from="1614092486376" duration="3335000" />
       <workItem from="1614102533486" duration="5259000" />
       <workItem from="1614168209706" duration="14830000" />
+      <workItem from="1614605843613" duration="846000" />
+      <workItem from="1614607404809" duration="1296000" />
     </task>
     <servers />
   </component>
@@ -65,10 +70,10 @@
       <screen x="1680" y="88" width="1600" height="900" />
     </state>
     <state x="2177" y="344" key="#com.intellij.fileTypes.FileTypeChooser/1680.88.1600.900/0.0.1680.1050@1680.88.1600.900" timestamp="1614172373948" />
-    <state x="2179" y="293" width="785" height="490" key="find.popup" timestamp="1614176221439">
+    <state x="2179" y="293" width="785" height="490" key="find.popup" timestamp="1614605865629">
       <screen x="1680" y="88" width="1600" height="900" />
     </state>
-    <state x="2179" y="293" width="785" height="490" key="find.popup/1680.88.1600.900/0.0.1680.1050@1680.88.1600.900" timestamp="1614176221439" />
+    <state x="2179" y="293" width="785" height="490" key="find.popup/1680.88.1600.900/0.0.1680.1050@1680.88.1600.900" timestamp="1614605865629" />
     <state x="2145" y="284" width="670" height="676" key="search.everywhere.popup" timestamp="1614174645955">
       <screen x="1680" y="88" width="1600" height="900" />
     </state>

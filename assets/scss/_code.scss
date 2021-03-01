@@ -55,6 +55,14 @@
         font-size: 0;
     }
 }
+
+.first-background {
+    background-image: url('/images/background/first_background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
 .second-background {
     background-image:url('/images/background/second_background.png');
     height: 54vh;
@@ -84,21 +92,22 @@
     height: 91vh;
 }
 
-
-
+// section -1
 .logo-container {
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
-
 .logo {
     width: 130px;
-    height: 130px;
+    height: 110px;
 }
 
 .logo-row {
     width: 100px;
-    height: 90px;
+    height: 100px;
 }
+
+// section -
 .logo-cloud-lock {
     width: 287px;
     height: 167px;
