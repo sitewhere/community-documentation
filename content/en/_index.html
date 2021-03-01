@@ -4,20 +4,21 @@ linkTitle = "SiteWhere"
 
 +++
 <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 <!-- Fonts -->
 <link href="fonts/AktivGrotesk-Font/stylesheet.css" rel="stylesheet" />
 <link href="fonts/Myriad-Pro-Font/stylesheet.css" rel="stylesheet" />
+<!-- Carousel -->
+<link rel="stylesheet" href="carousel/css/jquery.circular-carousel.css">
+
 
 <!-- section 1 -->
 <section id="first-section" class=" first-background row td-cover-block js-td-cover td-overlay
- -bg-blue pt-0 pb-0">
-	<div class="row align-items-center" >
-		<div class="col-6">
-
+ -bg-blue pt-0 pb-0 pr-0 pl-0">
+	<div class="container-fluid row align-items-center" >
+		<div class="col-6 col-md-6 col-lg-6 col-xl-6">
 		</div>
-		<div class="col-6">
+		<div class="col-6 col-md-6 col-lg-6 col-xl-6">
 			<div class="pb-5">
 				<div class="section-1-title">Cloud Native IoT Application</div>
 				<div class="section-1-sub-title">Enablement Platform</div>
@@ -70,7 +71,7 @@ linkTitle = "SiteWhere"
 <!-- section 4 -->
 <section id="forth-section" class="fourth-background row td-cover-block js-td-cover td-overlay -bg-blue">
 
-	<div class="row ">
+	<div class="row align-items-center">
 		<div class="col-5">
 			<div class="d-flex justify-content-center">
 				<img src="/images/logos/logo_apache.png" class="logo-open-source">
@@ -103,6 +104,7 @@ linkTitle = "SiteWhere"
 
 </section>
 
+<!-- section 5 -->
 <section id="fifth-section" style="" class="row td-cover-block js-td-cover td-overlay fifth-background  -bg-blue">
 	<div class="row">
 		<div class="col text-center">
@@ -110,6 +112,8 @@ linkTitle = "SiteWhere"
 		</div>
 	</div>
 </section>
+
+<!-- section 6 -->
 <section id="sixth-section" class="row td-cover-block js-td-cover td-overlay sixth-background  -bg-blue">
 	<div class="row">
 		<div class="col-6">
@@ -132,13 +136,25 @@ linkTitle = "SiteWhere"
 				many of the most popular third-party systems.
 			</div>
 	</div>
-</section>
-<section id="seventh-section" class="row td-cover-block js-td-cover td-overlay seventh-background  -bg-blue">
-	<div class="row  mt-3">
-
-		</div>
 	</div>
 </section>
+
+<!-- section 7 -->
+<section id="seventh-section" class="seventh-background row td-cover-block js-td-cover td-overlay
+ -bg-blue">
+
+
+		{{< carousel >}}
+		{{< /carousel >}}
+
+
+</section>
+
+
+
+
+
+
 <!--
 
 {{< blocks/section >}}

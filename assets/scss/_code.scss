@@ -87,8 +87,12 @@
 }
 .seventh-background {
    // background-image:url('/images/background/seventh_background.png');
-    background: transparent linear-gradient(0deg, #1B1432 0%, #151A3A 100%) 0% 0% no-repeat padding-box;
-    height: 91vh;
+    //background: transparent linear-gradient(0deg, #1B1432 0%, #151A3A 100%) 0% 0% no-repeat padding-box;
+    background-color: #151A3A;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
 }
 
 // section -1
@@ -123,3 +127,10 @@
     width: 590px;
     height: 385px;
 }
+
+// carousel
+.arrows{
+    font-size: 2rem;
+    color: #B3B3B3;
+}
+// /carousel

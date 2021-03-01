@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbd81092-58e5-4be0-876d-d421728856c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/layouts/shortcodes/carousel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layouts/shortcodes/rawhtml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/carousel/css/jquery.circular-carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/carousel/js/jquery.circular-carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/carousel/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/8fd26c6fc0dc864ab2058487f2702c41/typography.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/_code.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_code.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/en/_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/content/en/_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/background/fourth_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/docsy/layouts/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/docsy/layouts/partials/head.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +65,7 @@
       <workItem from="1614102533486" duration="5259000" />
       <workItem from="1614168209706" duration="14830000" />
       <workItem from="1614605843613" duration="846000" />
-      <workItem from="1614607404809" duration="3698000" />
+      <workItem from="1614607404809" duration="11117000" />
     </task>
     <servers />
   </component>
@@ -71,18 +77,21 @@
       <screen x="1680" y="88" width="1600" height="900" />
     </state>
     <state x="2177" y="344" key="#com.intellij.fileTypes.FileTypeChooser/1680.88.1600.900/0.0.1680.1050@1680.88.1600.900" timestamp="1614172373948" />
-    <state x="1818" y="179" width="1400" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1614612053227">
-      <screen x="1680" y="88" width="1600" height="900" />
+    <state x="166" y="121" width="1680" height="934" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1614622908124">
+      <screen x="0" y="0" width="1920" height="1200" />
     </state>
+    <state x="166" y="121" width="1680" height="934" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1200@0.0.1920.1200" timestamp="1614622908124" />
     <state x="1818" y="179" width="1400" height="700" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1680.88.1600.900/0.0.1680.1050@1680.88.1600.900" timestamp="1614612053227" />
-    <state x="2179" y="293" width="785" height="490" key="find.popup" timestamp="1614610156798">
+    <state x="2179" y="293" width="785" height="490" key="find.popup" timestamp="1614628481925">
       <screen x="1680" y="88" width="1600" height="900" />
     </state>
-    <state x="2179" y="293" width="785" height="490" key="find.popup/1680.88.1600.900/0.0.1680.1050@1680.88.1600.900" timestamp="1614610156798" />
-    <state x="2145" y="284" width="670" height="676" key="search.everywhere.popup" timestamp="1614174645955">
+    <state x="599" y="273" width="942" height="654" key="find.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1614624364346" />
+    <state x="2179" y="293" width="785" height="490" key="find.popup/1680.88.1600.900/0.0.1680.1050@1680.88.1600.900" timestamp="1614628481925" />
+    <state x="2145" y="284" width="670" height="676" key="search.everywhere.popup" timestamp="1614628515593">
       <screen x="1680" y="88" width="1600" height="900" />
     </state>
+    <state x="558" y="261" width="804" height="902" key="search.everywhere.popup/0.0.1920.1200@0.0.1920.1200" timestamp="1614619774951" />
     <state x="2145" y="284" width="670" height="676" key="search.everywhere.popup/1680.113.1600.806/0.25.1680.1025@1680.113.1600.806" timestamp="1614173667262" />
-    <state x="2145" y="284" width="670" height="676" key="search.everywhere.popup/1680.88.1600.900/0.0.1680.1050@1680.88.1600.900" timestamp="1614174645955" />
+    <state x="2145" y="284" width="670" height="676" key="search.everywhere.popup/1680.88.1600.900/0.0.1680.1050@1680.88.1600.900" timestamp="1614628515593" />
   </component>
 </project>
