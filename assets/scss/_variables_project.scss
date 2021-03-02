@@ -10,7 +10,7 @@ fonts home
  font-weight: 400;
 }
 
-.section-1-title {
+.section-title {
  @extend .font-myriad-regular;
  color: #151A3A;
  font-size: 2.4rem;
@@ -23,7 +23,7 @@ fonts home
  font-size: 2.4rem;
 }
 
-.section-1-text {
+.section-text {
  @extend .font-myriad-regular;
  color: #000000;
  font-size: 1.313rem;
