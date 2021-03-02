@@ -3,25 +3,24 @@ title = "SiteWhere"
 linkTitle = "SiteWhere"
 
 +++
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
 <!-- Fonts -->
 <link href="fonts/AktivGrotesk-Font/stylesheet.css" rel="stylesheet" />
 <link href="fonts/Myriad-Pro-Font/stylesheet.css" rel="stylesheet" />
 
 <!-- section 1 -->
-<section id="first-section" class=" first-background row td-cover-block js-td-cover td-overlay
- -bg-blue pt-0 pb-0">
-	<div class="row align-items-center" >
+{{< blocks/cover title="" image_anchor="top" height="full" color="blue" >}}
+<!--<section id="first-section" class=" first-background row td-cover-block js-td-cover td-overlay
+ -bg-blue pt-0 pb-0">-->
+	<div class="row align-items-center  mt-5 mb-5" >
 		<div class="col-6">
 
 		</div>
 		<div class="col-6">
-			<div class="pb-5">
-				<div class="section-1-title">Cloud Native IoT Application</div>
+			<div class=" mt-5 mb-5">
+				<div class="section-title">Cloud Native IoT Application</div>
 				<div class="section-1-sub-title">Enablement Platform</div>
-				<div class="section-1-text">Deploy customized, portable IoT solutions including infraestructure and services to any cloud that supports Kubernetes.</div>
+				<div class="section-text">Deploy customized, portable IoT solutions including infrastructure and services to any cloud that supports Kubernetes.</div>
 			</div>
 
 
@@ -34,13 +33,13 @@ linkTitle = "SiteWhere"
 					<img src="/images/logos/logo_azure.png" class="logo-row">
 				</div>
 
-
+		</div>
 		</div>
 	</div>
-</section>
+{{< /blocks/cover >}}
 
 <!-- section 2 -->
-<section id="second-section"  class="row td-cover-block js-td-cover td-overlay -bg-blue second-background">
+<section id="second-section"  class="row td-cover-block js-td-cover -bg-blue second-background">
 	<div class="row">
 
 	</div>
@@ -86,12 +85,12 @@ linkTitle = "SiteWhere"
 			<div class="d-flex justify-content-start">
 				<img src="/images/logos/image_open_source.png" class="logo-open-source-green">
 			</div>
-			<div class="text-left mt-3 section-4-title mr-lg-5 pr-lg-5" >
+			<div class="text-left mt-3 section-title-white mr-lg-5 pr-lg-5" >
 				Build on an
-				<span class="section-4-title-green"> Open Source Core </span>
+				<span class="text-green"> Open Source Core </span>
 				for Maximum Clarity
 			</div>
-			<div class="text-left mt-3 section-4-text mr-lg-5 pr-lg-5">
+			<div class="text-left mt-3 section-text-white mr-lg-5 pr-lg-5">
 				The core libraries, microservices and tooling for SiteWhere are made available as
 				open source under the Apache 2.0 license. Understand the code running your IoT
 				platform rather than using a "black box" system offered by many cloud providers.
