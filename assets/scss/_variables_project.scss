@@ -1,4 +1,91 @@
 /*
 Add styles or override variables from the theme here.
 */
+//$navbar-color: #F2F2F2 0% 0% no-repeat padding-box !default;
+/**
+fonts home
+ */
+.font-myriad-regular {
+ font-family: "Myriad Pro", serif;
+ font-weight: 400;
+}
 
+.section-title {
+ @extend .font-myriad-regular;
+ color: #151A3A;
+ font-size: 2.4rem;
+ margin-bottom: 0;
+}
+
+.section-1-sub-title {
+ @extend .font-myriad-regular;
+ color: #3682EA;
+ font-size: 2.4rem;
+}
+
+.section-text {
+ @extend .font-myriad-regular;
+ color: #000000;
+ font-size: 1.313rem;
+ margin-bottom: 0;
+}
+
+.section-title-white {
+ @extend .font-myriad-regular;
+ color: #ffffff;
+ font-size: 2.536rem;
+ margin-bottom: 0;
+}
+
+.section-text-white {
+ @extend .font-myriad-regular;
+ color: #ffffff;
+ font-size: 1.313rem;
+ margin-bottom: 0;
+}
+// font footer
+.footer-white-font {
+ font-family: "Aktiv Grotesk Corp", serif;
+ font-weight: 700;
+ color: #FFFFFF !important;
+ font-size:1.313rem;
+
+}
+.footer-brand-text{
+ font-family: "Aktiv Grotesk Corp", serif;
+ font-weight: 400;
+ color: #FFFFFF !important;
+ font-size: 0.8rem;
+}
+
+/**
+Style footer
+ */
+.footer-color {
+ background-image:url('/images/background/footer_background.png');
+ opacity: 1;
+ min-height: 400px;
+}
+.img-footer {
+ height: 100px;
+}
+
+.td-overlay--dark::after {
+ background-color: transparent !important;
+}
+
+.text-green {
+ color: #45B055;
+}
+.text-blue {
+ color: #3682EA;
+}
+.text-red {
+ color: #FE0502;
+}
+
+.text-wrap-in-col {
+ max-width: inherit;
+ margin-left: auto;
+ margin-right: auto;
+}

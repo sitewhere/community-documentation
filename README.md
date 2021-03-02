@@ -4,3 +4,12 @@
 
 This repository contains the content for the SiteWhere website including all system documentation. It is based
 on the [Docsy](https://www.docsy.dev/) theme for the [Hugo](https://gohugo.io/) static site generator.
+
+## Run the project locally
+
+```console
+git clone https://github.com/sitewhere/community-documentation.git
+cd community-documentation
+git submodule update --init --recursive
+hugo serve -D
+```

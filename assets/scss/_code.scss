@@ -4,12 +4,12 @@
 	// Highlighted code.
     .highlight {
         @extend .card;
-	
+
 	    max-height: 500px;
 	    overflow-y: auto;
         margin: 2rem 0;
         padding: 0;
-	    
+
         pre {
             margin: 0;
             padding: 1rem;
@@ -37,7 +37,7 @@
         word-wrap: normal;
         background-color: $gray-100;
         padding: $spacer;
-     
+
 
         > code {
 	    background-color: inherit !important;
@@ -55,3 +55,88 @@
         font-size: 0;
     }
 }
+
+.first-background {
+    background-image: url('/images/background/first_background.png');
+   /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: ;*/
+    height: 90vh;
+}
+.second-background {
+    background-image:url('/images/background/second_background.png');
+    height: 54vh;
+}
+.third-background {
+    background-image:url('/images/background/third_background.png');
+    height: 68vh;
+}
+.fourth-background {
+    background-image:url('/images/background/fourth_background.png');
+    border: 1px solid #707070;
+    opacity: 1;
+    height: 108vh;
+}
+.fifth-background {
+    background-image:url('/images/background/fifth_background.png');
+    height: 111vh;
+}
+.sixth-background {
+    background-image:url('/images/background/sixth_background.png');
+    height: 100vh;
+}
+.seventh-background {
+    background-image:url('/images/background/seventh_background.png');
+    background-color: #151A3A;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+// section -1
+.logo-container {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.logo {
+    width: 130px;
+    height: 110px;
+}
+
+.logo-row {
+    width: 100px;
+    height: 100px;
+}
+
+// carousel
+.carousel-row {
+    height: 200px;
+    width: 200px;
+}
+
+// section - 4
+.logo-cloud-lock {
+    width: 287px;
+    height: 167px;
+}
+.logo-open-source {
+    height: 200px;
+    width: 200px;
+}
+.logo-open-source-green {
+    height: 300px;
+    width: 300px;
+}
+.logo-performance {
+    width: 650px;
+    height: 425px;
+}
+
+// carousel
+.arrows{
+    font-size: 2rem;
+    color: #B3B3B3;
+}
+// /carousel
