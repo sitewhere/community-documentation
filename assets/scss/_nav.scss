@@ -2,8 +2,19 @@
 // Main navbar
 //
 .menu-style {
-    background-color: #F2F2F2;
-    height: 73px
+    background-color: #F2F2F2 !important;
+    height: 73px;
+    min-height: 4rem;
+    margin: 0;
+    z-index: 32;
+    @include media-breakpoint-up(md) {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .navbar-brand {
+        text-transform: none;
+    }
 }
 .logo-menu {
     width: 189px;
