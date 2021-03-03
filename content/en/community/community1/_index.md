@@ -1,8 +1,6 @@
 ---
-title: Community
-menu:
-  main:
-    weight: 40
+title: Community1
+
 ---
 
 <!--add blocks of content here to add more sections to the community1 page -->

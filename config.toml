@@ -157,7 +157,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 enable = false
 
 [params.links]
-# End user relevant links. These will show up on left side of footer and in the community page if you have one.
+# End user relevant links. These will show up on left side of footer and in the community1 page if you have one.
 [[params.links.user]]
 	name = "User mailing list"
 	url = "https://example.org/mail"
@@ -173,7 +173,7 @@ enable = false
 	url = "https://example.org/stack"
 	icon = "fab fa-stack-overflow"
         desc = "Practical questions and curated answers"
-# Developer relevant links. These will show up on right side of footer and in the community page if you have one.
+# Developer relevant links. These will show up on right side of footer and in the community1 page if you have one.
 [[params.links.developer]]
 	name = "GitHub"
 	url = "https://github.com/google/docsy"
@@ -189,4 +189,51 @@ enable = false
 	url = "https://example.org/mail"
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
+
+# Menu
+[menu]
+[[menu.main]]
+identifier = "platform"
+name = "Platform"
+url = "/platform"
+weight = 1
+[[menu.main]]
+identifier = "industries"
+name = "Industries"
+url = "/industries"
+weight = 2
+[[menu.main]]
+identifier = "usecases"
+name = "Use Cases"
+url = "/use-cases"
+weight = 3
+[[menu.main]]
+identifier = "community"
+name = "Community"
+url = "/community"
+weight = 4
+[[menu.main]]
+identifier = "community1"
+name = "Community1"
+url = "/community/community1"
+parent = "community"
+weight = 1
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/community/blog"
+parent = "community"
+weight = 2
+[[menu.main]]
+identifier = "documentation"
+name = "Documentation"
+url = "/community/docs"
+parent = "community"
+weight = 3
+[[menu.main]]
+identifier = "company"
+name = "Company"
+url = "/company"
+weight = 5
+
 

@@ -20,6 +20,32 @@
 		<ul class="navbar-nav me-auto lg-0" style="height: 60px;">
 			{{ $p := . }}
 			{{ range .Site.Menus.main }}
+
+
+			{{- if .HasChildren }}
+			<li class="nav-item dropdown pt-3 d-none d-lg-block">
+				{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
+				{{ with .Page }}
+				{{ $active = or $active ( $.IsDescendant .)  }}
+				{{ end }}
+				{{ $url := urls.Parse .URL }}
+				{{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
+				<a {{ if .Identifier }}id="{{ .Identifier }}"{{ end }} class="nav-link dropdown-toggle {{if $active }} active{{end}}" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span class="menu-items-font">{{ .Name }}</span></a>
+
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					{{ range .Children }}
+					<a {{ if .Identifier }}id="{{ .Identifier }}"{{ end }} class="dropdown-item {{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
+						<span class="menu__text">{{ .Name }}</span>
+					</a>
+					{{ end }}
+				</div>
+
+
+			</li>
+			{{- else }}
+
+
+
 			<li class="nav-item pt-3 btn">
 				{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
 				{{ with .Page }}
@@ -30,6 +56,12 @@
 				<a {{ if .Identifier }}id="{{ .Identifier }}"{{ end }} class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span class="menu-items-font">{{ .Name }}</span></a>
 			</li>
 			{{ end }}
+			{{ end }}
+
+
+
+
+
 			{{ if  .Site.Params.versions }}
 			<li class="nav-item dropdown d-none d-lg-block">
 				{{ partial "navbar-version-selector.html" . }}
@@ -67,6 +99,31 @@
 		<ul class="navbar-nav mt-2 mt-lg-0">
 			{{ $p := . }}
 			{{ range .Site.Menus.main }}
+
+
+			{{- if .HasChildren }}
+			<li class="nav-item dropdown mr-4 mb-2 mb-lg-0">
+				{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
+				{{ with .Page }}
+				{{ $active = or $active ( $.IsDescendant .)  }}
+				{{ end }}
+				{{ $url := urls.Parse .URL }}
+				{{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
+				<a {{ if .Identifier }}id="{{ .Identifier }}"{{ end }} class="nav-link dropdown-toggle {{if $active }} active{{end}}" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
+
+				<div class="dropdown-menu " aria-labelledby="navbarDropdown">
+					{{ range .Children }}
+					<a {{ if .Identifier }}id="{{ .Identifier }}"{{ end }} class="dropdown-item {{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}>
+						<span class="menu__text">{{ .Name }}</span>
+					</a>
+					{{ end }}
+				</div>
+
+
+			</li>
+			{{- else }}
+
+
 			<li class="nav-item mr-4 mb-2 mb-lg-0">
 				{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
 				{{ with .Page }}
@@ -76,7 +133,10 @@
 				{{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
 				<a {{ if .Identifier }}id="{{ .Identifier }}"{{ end }} class="nav-link{{if $active }} active{{end}}" href="{{ with .Page }}{{ .RelPermalink }}{{ else }}{{ .URL | relLangURL }}{{ end }}" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span{{if $active }} class="active"{{end}}>{{ .Name }}</span></a>
 			</li>
+
 			{{ end }}
+			{{ end }}
+
 			{{ if  .Site.Params.versions }}
 			<li class="nav-item dropdown d-none d-lg-block">
 				{{ partial "navbar-version-selector.html" . }}
