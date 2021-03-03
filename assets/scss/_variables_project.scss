@@ -62,7 +62,11 @@ fonts home
 Style footer
  */
 .footer-color {
- background-image:url('/images/background/footer_background.png');
+ background-image:url('/images/background/footer_background.webp');
+ background-size: cover;
+ width: 100%;
+ margin-left: 0px !important;
+ margin-right: 0px !important;
  opacity: 1;
  min-height: 400px;
 }
@@ -85,7 +89,13 @@ Style footer
 }
 
 .text-wrap-in-col {
- max-width: inherit;
+
  margin-left: auto;
  margin-right: auto;
+ @media (min-width: 0px) {
+  max-width: fit-content;
+ }
+ @media (min-width: 1601px) {
+  max-width: inherit;
+ }
 }
