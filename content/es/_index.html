@@ -3,68 +3,152 @@ title = "SiteWhere"
 linkTitle = "SiteWhere"
 
 +++
+<!-- Fonts -->
+<link href="fonts/AktivGrotesk-Font/stylesheet.css" rel="stylesheet" />
+<link href="fonts/Myriad-Pro-Font/stylesheet.css" rel="stylesheet" />
 
-<link href="/fonts/AktivGrotesk-Font/stylesheet.css" rel="stylesheet" />
-<link href="/fonts/Myriad-Pro-Font/stylesheet.css" rel="stylesheet" />
-
+<!-- section 1 -->
 {{< blocks/cover title="" image_anchor="top" height="full" color="blue" >}}
-<div class="row align-items-center mt-5 mb-5" >
-	<div class="col">
+<!--<section id="first-section" class=" first-background row td-cover-block js-td-cover td-overlay
+ -bg-blue pt-0 pb-0">-->
+<div class="row align-items-center  mt-5 mb-5" >
+	<div class="col-6">
 
 	</div>
-	<div class="col">
-		<div class="pb-5 mt-5">
+	<div class="col-6">
+		<div class=" mt-5 mb-5">
 			<div class="section-title">Cloud Native IoT Application</div>
 			<div class="section-1-sub-title">Enablement Platform</div>
-			<div class="section-text">
-				Despliegue customizado, soluciones de IoT portable incluyendo Infraestructura y
-				servicios a cualquier nube que soporte Kubernetes
-
-			</div>
+			<div class="section-text">Deploy customized, portable IoT solutions including infrastructure and services to any cloud that supports Kubernetes.</div>
 		</div>
 
-		<div class="logo-container">
-			<div class="d-flex justify-content-center">
-				<img src="/images/home/kubernetes_logo.png" class="logo">
-			</div>
-			<div class="d-flex justify-content-around pt-5">
-				<img src="/images/home/google_cloud_logo.png" class="logo-row">
-				<img src="/images/home/amazon_logo.png" class="logo-row">
-				<img src="/images/home/azure_logo.png" class="logo-row">
-			</div>
+
+		<div class="d-flex justify-content-center">
+			<img src="/images/logos/logo_kubernetes.png" class="logo">
 		</div>
+		<div class="d-flex justify-content-between pt-5">
+			<img src="/images/logos/logo_google_cloud.png" class="logo-row">
+			<img src="/images/logos/logo_amazon.png" class="logo-row">
+			<img src="/images/logos/logo_azure.png" class="logo-row">
+		</div>
+
 	</div>
 </div>
 </div>
 {{< /blocks/cover >}}
 
+<!-- section 2 -->
+<section id="second-section"  class="row td-cover-block js-td-cover -bg-blue second-background">
+	<div class="row">
 
-{{% blocks/lead color="primary" %}}
-Goldydocs provides a single web UI providing visibility into porridge temperature, chair size, and bed softness metrics! You can even find out who's been eating **your** porridge.
+	</div>
+</section>
 
-(Sadly, Goldydocs isn't a real project, but you can use this site as an example to create your own real websites with [Docsy](http://docsy.dev))
-{{% /blocks/lead %}}
+<!-- section 3 -->
+<section id="third-section" style="" class="row td-cover-block js-td-cover third-background  -bg-blue">
+	<div class="container-fluid">
+		<div class="col-7">
+			<div class="d-flex justify-content-center mb-5">
+				<img src="/images/home/cloud_lock.png" alt="" class="logo-cloud-lock"/>
+			</div>
+			<div class="text-center section-title mb-5">
+				Evite <span class="text-red">Ataduras</span> y <span class="text-red">Despliegue</span>
+				a cualquier nube</span>
+			</div>
+			<div class="section-text text-center text-wrap-in-col">
+				Evite que su solución de IoT esté vinculada a un único proveedor de nube.
+				SiteWhere abarca el ecosistema nativo de la nube de Kubernetes y puede implementarse para
+				cualquier proveedor que admita Kubernetes. Benefíciese del enorme ecosistema de proyectos
+				ya se está ejecutando en Kubernetes.
+			</div>
+		</div>
+	</div>
+</section>
 
-{{< blocks/section color="dark" >}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
+<!-- section 4 -->
+<section id="forth-section" class="fourth-background row td-cover-block js-td-cover td-overlay -bg-blue">
 
-Please follow this space for updates!
-{{% /blocks/feature %}}
+	<div class="row align-items-center">
+		<div class="col-5">
+			<div class="d-flex justify-content-center">
+				<img src="/images/logos/logo_apache.png" class="logo-open-source">
+			</div>
+			<div class="d-flex justify-content-center ">
+				<img src="/images/logos/logo_cloud_native.png" class="logo-open-source">
+			</div>
+			<div class="d-flex justify-content-center mb-5">
+				<img src="/images/logos/logo_helm.png" class="logo-open-source">
+			</div>
+		</div>
+		<div class="col-7">
+			<div class="d-flex justify-content-start">
+				<img src="/images/logos/image_open_source.png" class="logo-open-source-green">
+			</div>
+			<div class="text-left mt-3 section-title-white mr-lg-5 pr-lg-5" >
+				Construido sobre un
+				<span class="text-green"> Core Open Source </span>
+				para Máxima Claridad
+			</div>
+			<div class="text-left mt-3 section-text-white mr-lg-5 pr-lg-5">
+				Las bibliotecas centrales, los microservicios y las herramientas de SiteWhere están disponibles como
+				código abierto bajo la licencia Apache 2.0. Comprenda el código que ejecuta su plataforma IoT
+				en lugar de utilizar un sistema de "caja negra" como ofrecen muchos proveedores de nube.
+				SiteWhere adopta el ecosistema CNCF y aprovecha tecnologías como Kubernetes
+				y Helm.
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!-- section 5 -->
+<section id="fifth-section" style="" class="row td-cover-block js-td-cover td-overlay fifth-background  -bg-blue">
+	<div class="row">
+		<div class="col text-center">
+
+		</div>
+	</div>
+</section>
+
+<!-- section 6 -->
+<section id="sixth-section" class="row td-cover-block js-td-cover td-overlay sixth-background  -bg-grey">
+	<div class="row" >
+		<div class="col-6">
+		</div>
+		<div class="col-6 mt-2">
+			<div class="d-flex justify-content-center mr-5 mt-5">
+				<img src="/images/home/performance-scalability.png" class="logo-performance mr-3">
+			</div>
+			<div class="text-center mt-5 section-title mr-lg-5 pr-lg-5" >
+				Diseñado con <span class="text-red">Rendimiento</span>
+				y
+				<span class="text-red">Escalabilidad </span>
+				en mente
+			</div>
+			<div class="text-center mt-5 section-text mr-lg-5 pr-lg-5">
+				SiteWhere aprovecha muchas de las tecnologías utilizadas por las empresas más grandes
+				en internet. Una canalización de eventos basada en Apache Kafka Streams
+				mueve los datos de eventos del dispositivo utilizando tecnologías como MQTT y CoAP, los almacena en
+				Bases de datos de series temporales altamente escalables y permite que los datos se integren con
+				muchos de los sistemas de terceros más populares.
+			</div>
+		</div>
+	</div>
+</section>
+<section id="seventh-section" class="row td-cover-block   seventh-background  hover-bg-dark-blue">
+	<div class="container-fluid ">
+		<div class="col text-center mt-3 section-title-white">
+			<span class="text-red">Características de </span> SiteWhere
+		</div>
+	</div>
+	<div class="container-fluid justify-center">
 
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
+		{{< carousel >}}
+	</div>
+</section>
 
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
-
-{{< /blocks/section >}}
-
+<!--
 
 {{< blocks/section >}}
 <div class="col">
@@ -100,3 +184,4 @@ For announcement of latest features etc.
 </div>
 
 {{< /blocks/section >}}
+-->
