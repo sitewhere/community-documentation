@@ -1,5 +1,5 @@
 ---
-title: Community
+title: Open Source
 menu:
   main:
     weight: 40
