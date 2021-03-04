@@ -111,14 +111,14 @@
   margin-left: 0px;
   height: 100vh;
   // Large devices (desktops, less than 1200px)
-  @media (max-width: 1199.98px) {
+  @media (min-width: 0px) {
     padding-top: 1rem !important;
   }
   // extra large devices (landscape phones, less than 768px)
   @media (min-width: 1200px) and (max-width: 1600px) {
     padding-top: 2rem !important;
   }
-  @media (max-width: 1601px) {
+  @media (min-width: 1601px) {
     padding-top: 5rem !important;
   }
 }
@@ -174,11 +174,10 @@
 
 // section 6
 .mt-perform-section {
-
   @media (max-width: 1600px) {
     margin-top: -70px;
   }
-  @media (min-width: 1600px) {
+  @media (min-width: 1602px) {
     margin-top: 3rem;
   }
 }
