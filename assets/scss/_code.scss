@@ -62,15 +62,27 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: ;*/
-  height: 90vh;
+  height: 100vh;
+  margin-left: 0px !important;
+  width: 100%;
 }
 .second-background {
-  background-image: url("/images/background/second_background.webp");
-  height: 54vh;
+  background-image: url("/images/background/internet-things.webm");
+  height: 500px;
+  width: 100%;
+  padding-top: 0px !important;
 }
 .third-background {
   background-image: url("/images/background/third_background.webp");
   height: 68vh;
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) {
+    padding-top: 2rem !important;
+  }
+  // extra large devices (landscape phones, less than 768px)
+  @media (min-width: 1200px) {
+    padding-top: 5rem !important;
+  }
 }
 .fourth-background {
   background-image: url("/images/background/fourth_background.webp");
@@ -79,19 +91,39 @@
   height: 108vh;
   margin-left: 0px !important;
   width: 100%;
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) {
+    padding-top: 1rem !important;
+  }
+  // extra large devices (landscape phones, less than 768px)
+  @media (min-width: 1200px) {
+    padding-top: 5rem !important;
+  }
 }
 .fifth-background {
   background-image:url('/images/background/fifth_background.webp');
-  height: 111vh;
+  height: 100vh;
   width: 100%;
   margin-left: 0px !important;
   margin-right: 0px !important;
+  padding-top: 0px !important;
 }
 .sixth-background {
   background-image:url('/images/background/sixth_background.webp');
   width: 100%;
   margin-left: 0px;
   height: 100vh;
+  // Large devices (desktops, less than 1200px)
+  @media (min-width: 0px) {
+    padding-top: 1rem !important;
+  }
+  // extra large devices (landscape phones, less than 768px)
+  @media (min-width: 1200px) and (max-width: 1600px) {
+    padding-top: 2rem !important;
+  }
+  @media (min-width: 1601px) {
+    padding-top: 5rem !important;
+  }
 }
 .seventh-background {
   background-image:url('/images/background/seventh_background.webp');
@@ -139,8 +171,18 @@
   width: 300px;
 }
 .logo-performance {
-  width: 650px;
-  height: 425px;
+  width: 590px;
+  height: 385px;
+}
+
+// section 6
+.mt-perform-section {
+  @media (max-width: 1600px) {
+    margin-top: -70px;
+  }
+  @media (min-width: 1602px) {
+    margin-top: 3rem;
+  }
 }
 
 // carousel
