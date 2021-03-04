@@ -208,32 +208,30 @@ name = "Use Cases"
 url = "/use-cases"
 weight = 3
 [[menu.main]]
-identifier = "community"
-name = "Community"
-url = "/community"
+identifier = "open-source"
+name = "Open Source"
+url = "/open-source"
 weight = 4
 [[menu.main]]
-identifier = "community1"
+identifier = "community"
 name = "Community"
-url = "/community/community"
-parent = "community"
+url = "/open-source/community"
+parent = "open-source"
 weight = 1
 [[menu.main]]
 identifier = "blog"
 name = "Blog"
-url = "/community/blog"
-parent = "community"
+url = "/open-source/blog"
+parent = "open-source"
 weight = 2
 [[menu.main]]
 identifier = "docs"
 name = "Docs"
-url = "/community/docs"
-parent = "community"
+url = "/open-source/docs"
+parent = "open-source"
 weight = 3
 [[menu.main]]
 identifier = "company"
 name = "Company"
 url = "/company"
 weight = 5
-
-
