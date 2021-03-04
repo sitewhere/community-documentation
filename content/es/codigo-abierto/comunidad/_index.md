@@ -2,7 +2,7 @@
 title: Communidad
 
 cascade:
-  - type: "comunidad"
+  - type: "community"
     _target:
       path: "/codigo-abierto/comunidad/**"
 ---

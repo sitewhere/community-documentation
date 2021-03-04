@@ -257,24 +257,24 @@ weight = 3
 [[languages.es.menu.main]]
 identifier = "codigo-abierto"
 name = "Código Abierto"
-url = "/codigo-abierto"
+url = "/es/codigo-abierto"
 weight = 4
 [[languages.es.menu.main]]
 identifier = "comunidad"
 name = "Comunidad"
-url = "/codigo-abierto/comunidad"
+url = "/es/codigo-abierto/comunidad"
 parent = "codigo-abierto"
 weight = 1
 [[languages.es.menu.main]]
 identifier = "bloges"
 name = "Blog"
-url = "/codigo-abierto/blog"
+url = "/es/codigo-abierto/blog"
 parent = "codigo-abierto"
 weight = 2
 [[languages.es.menu.main]]
 identifier = "documentacion"
 name = "Documentación"
-url = "/codigo-abierto/documentacion"
+url = "/es/codigo-abierto/documentacion"
 parent = "codigo-abierto"
 weight = 3
 [[languages.es.menu.main]]

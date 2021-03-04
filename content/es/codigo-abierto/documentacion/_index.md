@@ -2,7 +2,7 @@
 title: Documentacion
 
 cascade:
-  - type: "documentacion"
+  - type: "docs"
     _target:
       path: "/codigo-abierto/documentacion/**"
 ---

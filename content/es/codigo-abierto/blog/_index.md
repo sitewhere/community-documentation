@@ -3,7 +3,7 @@ title: "Blog"
 linkTitle: "Blog"
 
 cascade:
-  - type: "bloges"
+  - type: "blog"
     _target:
       path: "/codigo-abierto/blog/**"
 ---
