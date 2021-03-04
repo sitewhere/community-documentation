@@ -1,11 +1,11 @@
 ---
-title: "Docsy Blog"
+title: "Blog"
 linkTitle: "Blog"
 
 cascade:
-  - type: "blog"
+  - type: "bloges"
     _target:
-      path: "/community/blog/**"
+      path: "/codigo-abierto/blog/**"
 ---
 
 
