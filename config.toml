@@ -190,3 +190,50 @@ enable = false
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
 
+# Menu
+[menu]
+[[menu.main]]
+identifier = "platform"
+name = "Platform"
+url = "/platform"
+weight = 1
+[[menu.main]]
+identifier = "industries"
+name = "Industries"
+url = "/industries"
+weight = 2
+[[menu.main]]
+identifier = "usecases"
+name = "Use Cases"
+url = "/use-cases"
+weight = 3
+[[menu.main]]
+identifier = "community"
+name = "Community"
+url = "/community"
+weight = 4
+[[menu.main]]
+identifier = "community1"
+name = "Community"
+url = "/community/community"
+parent = "community"
+weight = 1
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/community/blog"
+parent = "community"
+weight = 2
+[[menu.main]]
+identifier = "docs"
+name = "Docs"
+url = "/community/docs"
+parent = "community"
+weight = 3
+[[menu.main]]
+identifier = "company"
+name = "Company"
+url = "/company"
+weight = 5
+
+

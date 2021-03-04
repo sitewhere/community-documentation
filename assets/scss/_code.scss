@@ -77,21 +77,30 @@
   border: 1px solid #707070;
   opacity: 1;
   height: 108vh;
+  margin-left: 0px !important;
+  width: 100%;
 }
 .fifth-background {
-  background-image: url("/images/background/fifth_background.webp");
+  background-image:url('/images/background/fifth_background.webp');
   height: 111vh;
+  width: 100%;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
 .sixth-background {
-  background-image: url("/images/background/sixth_background.webp");
+  background-image:url('/images/background/sixth_background.webp');
+  width: 100%;
+  margin-left: 0px;
   height: 100vh;
 }
 .seventh-background {
-  background-image: url("/images/background/seventh_background.webp");
-  background-color: #151a3a;
+  background-image:url('/images/background/seventh_background.webp');
+  background-color: #151A3A;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  margin-left: 0px;
   height: 90vh;
 }
 
