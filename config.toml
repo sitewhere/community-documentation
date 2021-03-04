@@ -49,6 +49,9 @@ anchor = "smart"
 # Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
 id = "UA-00000000-0"
 
+# Do not use pluralize titles
+pluralizelisttitles = false
+
 # Language configuration
 
 [languages]
@@ -94,16 +97,16 @@ privacy_policy = "https://policies.google.com/privacy"
 version_menu = "Releases"
 
 # Flag used in the "version-banner" partial to decide whether to display a 
-# banner on every page indicating that this is an archived version of the docs.
+# banner on every page indicating that this is an archived version of the documentacion.
 # Set this flag to "true" if you want to display the banner.
 archived_version = false
 
-# The version number for the version of the docs represented in this doc set.
+# The version number for the version of the documentacion represented in this doc set.
 # Used in the "version-banner" partial to display a version number for the 
 # current doc set.
 version = "0.0"
 
-# A link to latest version of the docs. Used in the "version-banner" partial to
+# A link to latest version of the documentacion. Used in the "version-banner" partial to
 # point people to the main doc site.
 url_latest_version = "https://example.com"
 
@@ -157,7 +160,7 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 enable = false
 
 [params.links]
-# End user relevant links. These will show up on left side of footer and in the community page if you have one.
+# End user relevant links. These will show up on left side of footer and in the codigo-abierto page if you have one.
 [[params.links.user]]
 	name = "User mailing list"
 	url = "https://example.org/mail"
@@ -173,7 +176,7 @@ enable = false
 	url = "https://example.org/stack"
 	icon = "fab fa-stack-overflow"
         desc = "Practical questions and curated answers"
-# Developer relevant links. These will show up on right side of footer and in the community page if you have one.
+# Developer relevant links. These will show up on right side of footer and in the codigo-abierto page if you have one.
 [[params.links.developer]]
 	name = "GitHub"
 	url = "https://github.com/google/docsy"
@@ -192,46 +195,90 @@ enable = false
 
 # Menu
 [menu]
-[[menu.main]]
+[[languages.en.menu.main]]
 identifier = "platform"
 name = "Platform"
 url = "/platform"
 weight = 1
-[[menu.main]]
+[[languages.en.menu.main]]
 identifier = "industries"
 name = "Industries"
 url = "/industries"
 weight = 2
-[[menu.main]]
+[[languages.en.menu.main]]
 identifier = "usecases"
 name = "Use Cases"
 url = "/use-cases"
 weight = 3
-[[menu.main]]
+[[languages.en.menu.main]]
 identifier = "open-source"
 name = "Open Source"
 url = "/open-source"
 weight = 4
-[[menu.main]]
+[[languages.en.menu.main]]
 identifier = "community"
 name = "Community"
 url = "/open-source/community"
 parent = "open-source"
 weight = 1
-[[menu.main]]
+[[languages.en.menu.main]]
 identifier = "blog"
 name = "Blog"
 url = "/open-source/blog"
 parent = "open-source"
 weight = 2
-[[menu.main]]
+[[languages.en.menu.main]]
 identifier = "docs"
 name = "Docs"
 url = "/open-source/docs"
 parent = "open-source"
 weight = 3
-[[menu.main]]
+[[languages.en.menu.main]]
 identifier = "company"
 name = "Company"
 url = "/company"
+weight = 5
+
+[[languages.es.menu.main]]
+identifier = "plataforma"
+name = "Plataforma"
+url = "/plataforma"
+weight = 1
+[[languages.es.menu.main]]
+identifier = "industrias"
+name = "Industrias"
+url = "/industrias"
+weight = 2
+[[languages.es.menu.main]]
+identifier = "casosdeuso"
+name = "Casos de Uso"
+url = "/casos-de-uso"
+weight = 3
+[[languages.es.menu.main]]
+identifier = "codigo-abierto"
+name = "Código Abierto"
+url = "/es/codigo-abierto"
+weight = 4
+[[languages.es.menu.main]]
+identifier = "comunidad"
+name = "Comunidad"
+url = "/es/codigo-abierto/comunidad"
+parent = "codigo-abierto"
+weight = 1
+[[languages.es.menu.main]]
+identifier = "bloges"
+name = "Blog"
+url = "/es/codigo-abierto/blog"
+parent = "codigo-abierto"
+weight = 2
+[[languages.es.menu.main]]
+identifier = "documentacion"
+name = "Documentación"
+url = "/es/codigo-abierto/documentacion"
+parent = "codigo-abierto"
+weight = 3
+[[languages.es.menu.main]]
+identifier = "compania"
+name = "Compañía"
+url = "/compania"
 weight = 5

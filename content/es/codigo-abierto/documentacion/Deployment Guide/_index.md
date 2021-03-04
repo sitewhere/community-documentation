@@ -1,8 +1,9 @@
 ---
-title: Guía de Despliegue
-linkTitle: Guía de Despliegue
+title: Deployment Guide
+linkTitle: Deployment Guide
 weight: "2"
-description: Desplegar la infrastructura e Instancias de SiteWhere en Kubernetes 
+description: 'Deploy SiteWhere infrastructure and instances to Kubernetes'
+
 ---
 SiteWhere installation includes two steps, installation of the infrastructure and installation of instances which run on top of that infrastructure. The initial infrastructure installation deploys Kubernetes [custom resource definitions](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) (CRDs) for the SiteWhere model, a set of resource templates that are used as the default configuration for the system, and a set of infrastructure components which serve as a platform for instances to run on. Multiple SiteWhere instances may be deployed on top of the common infrastructure, each instance composed of many microservices which handle processing for the instance based on a configuration customized for that instance.
 
