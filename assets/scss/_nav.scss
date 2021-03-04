@@ -27,15 +27,16 @@
   min-width: 10px;
 }
 
-.menu-items-font-red {
+.menu-items-font-white {
   margin-left: 20px;
   font-weight: 500;
-  color: #fa210f !important;
+  color: #ffffff !important;
   font-size: 1rem;
 }
 .ul-nav-height {
   height: 60px;
 }
+
 .btn::before {
   background-color: transparent;
 }
@@ -50,11 +51,10 @@
   filter: brightness(1);
 }
 
-.btn-red:hover {
-  border-bottom-style: solid;
-  border-bottom-width: 4px;
-  border-bottom-color: #fa210f;
-  filter: brightness(1);
+.btn-red {
+  background-color: #fa210f;
+  border-radius: 0.5rem !important;
+  width: 50px;
 }
 
 .dropdown-item {
