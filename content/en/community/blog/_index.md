@@ -2,6 +2,10 @@
 title: "Blog"
 linkTitle: "Blog"
 
+cascade:
+  - type: "blog"
+    _target:
+      path: "/community/blog/**"
 ---
 
 
