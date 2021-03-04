@@ -15,7 +15,7 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: content/en/community
+  path: content/en/open-source
   label: Community
   create: all
   match: "**/*"
@@ -29,7 +29,7 @@ sections:
   label: About
   create: all
   match: "**/*"
-upload_dir: community-documentation
+upload_dir: open-source-documentation
 public_path: https://res.cloudinary.com/{{ CLOUD_NAME }}/image/upload
 front_matter_path: ''
 use_front_matter_path: 

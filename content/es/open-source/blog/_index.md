@@ -1,9 +1,11 @@
 ---
 title: "Docsy Blog"
 linkTitle: "Blog"
-menu:
-  main:
-    weight: 30
+
+cascade:
+  - type: "blog"
+    _target:
+      path: "/community/blog/**"
 ---
 
 
