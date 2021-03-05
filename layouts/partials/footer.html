@@ -28,7 +28,7 @@
             </div>
           </div>
           <!-- platform col -->
-          <div class="col-6 col-sm-6">
+          <div class="col-md-6 col-sm-6">
             {{ with .Site.GetPage "platform" }}<p class="mt-2 "><a class="footer-white-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
             <p class="footer-black-font">
               Overview
@@ -49,7 +49,7 @@
       <div class="col-md-4 col-sm-4  text-xs-center ">
         <div class="row">
           <!-- industries col -->
-          <div class="col-6 col-sm-6">
+          <div class="col-md-6 col-sm-6">
             {{ with .Site.GetPage "industries" }}<p class="mt-2 "><a class="footer-white-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
             <p class="footer-black-font">
               Industrial Monitoring
@@ -166,7 +166,7 @@
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-3 text-xs-center ">
+      <div class="col-md-4 col-sm-3 text-xs-center">
         <div class="row mt-5">
           {{ with resources.Get "icons/logoWhite.svg" }}
           <img class="img-footer" src="/images/logos/azulH.svg" /><!--{{ ( . | minify).Content | safeHTML }}-->
