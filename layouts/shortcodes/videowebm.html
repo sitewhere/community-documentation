@@ -1,4 +1,11 @@
 <!-- raw html -->
-<video loop autoplay width="100%">
+<video loop autoplay class="video-responsive">
   <source src="{{ .Get 0 }}" type="video/webm">
 </video>
+<style>
+  .video-responsive {
+      object-fit: contain;
+      width: 99.1vw;
+      position: relative;
+  }
+</style>
