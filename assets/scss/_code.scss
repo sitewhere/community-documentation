@@ -58,16 +58,15 @@
 
 .first-background {
   background-image: url("/images/background/first_background.webp");
-  /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: ;*/
   height: 100vh;
-  margin-left: 0px !important;
-  width: 100%;
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 .second-background {
-  background-image: url("/images/background/internet-things.webm");
+  background-image: url("/images/background/second_background.webp");
   height: 500px;
   width: 100%;
   padding-top: 0px !important;
