@@ -1,5 +1,5 @@
 ---
-title: Industries
+title: Industrias
 
 ---
 
