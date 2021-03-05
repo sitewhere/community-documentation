@@ -1,5 +1,6 @@
 ---
 title: Comunidad
+weight: "2"
 
 cascade:
   - type: "community"

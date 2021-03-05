@@ -1,6 +1,7 @@
 ---
 title: "Blog"
 linkTitle: "Blog"
+weight: "3"
 
 cascade:
   - type: "blog"

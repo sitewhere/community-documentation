@@ -216,21 +216,21 @@ name = "Open Source"
 url = "/open-source"
 weight = 4
 [[languages.en.menu.main]]
+identifier = "documentation"
+name = "Documentation"
+url = "/open-source/documentation"
+parent = "open-source"
+weight = 1
+[[languages.en.menu.main]]
 identifier = "community"
 name = "Community"
 url = "/open-source/community"
 parent = "open-source"
-weight = 1
+weight = 2
 [[languages.en.menu.main]]
 identifier = "blog"
 name = "Blog"
 url = "/open-source/blog"
-parent = "open-source"
-weight = 2
-[[languages.en.menu.main]]
-identifier = "docs"
-name = "Docs"
-url = "/open-source/docs"
 parent = "open-source"
 weight = 3
 [[languages.en.menu.main]]
@@ -260,21 +260,21 @@ name = "Código Abierto"
 url = "/es/codigo-abierto"
 weight = 4
 [[languages.es.menu.main]]
+identifier = "documentacion"
+name = "Documentación"
+url = "/es/codigo-abierto/documentacion"
+parent = "codigo-abierto"
+weight = 1
+[[languages.es.menu.main]]
 identifier = "comunidad"
 name = "Comunidad"
 url = "/es/codigo-abierto/comunidad"
 parent = "codigo-abierto"
-weight = 1
+weight = 2
 [[languages.es.menu.main]]
 identifier = "bloges"
 name = "Blog"
 url = "/es/codigo-abierto/blog"
-parent = "codigo-abierto"
-weight = 2
-[[languages.es.menu.main]]
-identifier = "documentacion"
-name = "Documentación"
-url = "/es/codigo-abierto/documentacion"
 parent = "codigo-abierto"
 weight = 3
 [[languages.es.menu.main]]
