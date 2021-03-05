@@ -4,27 +4,76 @@
 {{ $siteTitle := (.Site.Title) }}
 
 {{ if eq $siteTitle $title }}
-<footer class="bg-secondary py-4 row footer-color d-print-none" >
+<footer class="bg-secondary py-4 row footer-color d-print-none " >
   <div class="container-fluid mx-sm-5 mt-4">
     <div class="row">
       <div class="col-4 col-sm-4 text-xs-center ">
         <div class="row">
+          <!-- sitewhere col -->
           <div class="col-6 col-sm-6">
-            {{ with .Site.GetPage "about" }}<p class="mt-2 "><a class="footer-white-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            {{ with .Site.GetPage "home" }}<p class="mt-2 "><a class="footer-white-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            <div>
+              {{ with .Site.GetPage "platform" }}<p class="mt-2 "><a class="footer-black-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            </div>
+            <div>
+              {{ with .Site.GetPage "industries" }}<p class="mt-2 "><a class="footer-black-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            </div>
+            <div>
+              {{ with .Site.GetPage "use-cases" }}<p class="mt-2 "><a class="footer-black-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            </div>
+            <div>
+              {{ with .Site.GetPage "company" }}<p class="mt-2 "><a class="footer-black-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            </div>
           </div>
+          <!-- platform col -->
           <div class="col-6 col-sm-6">
-            {{ with .Site.GetPage "docs" }}<p class="mt-2 "><a class="footer-white-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            {{ with .Site.GetPage "platform" }}<p class="mt-2 "><a class="footer-white-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            <p class="footer-black-font">
+              Overview
+            </p>
+            <p class="footer-black-font">
+              Features
+            </p>
+            <p class="footer-black-font">
+              Demo
+            </p>
+            <p class="footer-black-font">
+              Pricing
+            </p>
           </div>
         </div>
 
       </div>
       <div class="col-4 col-sm-4  text-xs-center ">
         <div class="row">
+          <!-- industries col -->
           <div class="col-6 col-sm-6">
-            {{ with .Site.GetPage "blog" }}<p class="mt-2 "><a class="footer-white-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            {{ with .Site.GetPage "industries" }}<p class="mt-2 "><a class="footer-white-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            <p class="footer-black-font">
+              Industrial Monitoring
+            </p>
+            <p class="footer-black-font">
+              Smart Environment
+            </p>
+            <p class="footer-black-font">
+              Tracking
+            </p>
+            <p class="footer-black-font">
+              Smart Parking
+            </p>
           </div>
+          <!-- open source col -->
           <div class="col-6 col-sm-6">
-            {{ with .Site.GetPage "community" }}<p class="mt-2 "><a class="footer-white-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            {{ with .Site.GetPage "community" }}<p class="mt-2 "><a class="footer-white-font" href="{{ .RelPermalink }}">Open Source</a></p>{{ end }}
+            <div>
+              {{ with .Site.GetPage "community" }}<p class="mt-2 "><a class="footer-black-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            </div>
+            <div>
+              {{ with .Site.GetPage "blog" }}<p class="mt-2 "><a class="footer-black-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            </div>
+            <div>
+              {{ with .Site.GetPage "docs" }}<p class="mt-2 "><a class="footer-black-font" href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}
+            </div>
           </div>
         </div>
       </div>
