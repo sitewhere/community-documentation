@@ -46,11 +46,17 @@ fonts home
 // font footer
 .footer-white-font {
  font-family: "Aktiv Grotesk Corp", serif;
- font-weight: 700;
+ font-weight: 500;
  color: #FFFFFF !important;
  font-size:1.313rem;
-
 }
+.footer-black-font {
+ font-family: "Aktiv Grotesk Corp", serif;
+ font-weight: normal;
+ color: #151A3A !important;
+ font-size:1rem;
+}
+
 .footer-brand-text{
  font-family: "Aktiv Grotesk Corp", serif;
  font-weight: 400;

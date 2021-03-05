@@ -1,5 +1,5 @@
 ---
-title: Communidad
+title: Comunidad
 
 cascade:
   - type: "community"
