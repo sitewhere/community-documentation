@@ -4,7 +4,7 @@
 {{ $siteTitle := (.Site.Title) }}
 
 {{ if eq $siteTitle $title }}
-<nav class="navbar navbar-expand-lg navbar-light menu-style ">
+<nav class="navbar navbar-expand-lg navbar-light menu-style" style="border-bottom: 1px solid #ddd;">
 	<div class="d-flex container-fluid">
 		<div class="flex-grow-1">
 			<a class="navbar-brand" aria-current="page" href="{{ .Site.Home.RelPermalink }}">
@@ -17,13 +17,13 @@
 
 		<div>
 			<div class="collapse navbar-collapse justify-content-end" id="main_navbar">
-		<ul class="navbar-nav me-auto lg-0" style="height: 60px;">
+		<ul class="navbar-nav me-auto lg-0 pt-1" style="height: 60px">
 			{{ $p := . }}
 			{{ range .Site.Menus.main }}
 
 
 			{{- if .HasChildren }}
-			<li class="nav-item dropdown pt-3 d-none d-lg-block">
+			<li class="nav-item dropdown d-none d-lg-block" style="padding-top: 7px;">
 				{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
 				{{ with .Page }}
 				{{ $active = or $active ( $.IsDescendant .)  }}
@@ -46,7 +46,7 @@
 
 
 
-			<li class="nav-item pt-3 btn">
+			<li class="nav-item btn">
 				{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
 				{{ with .Page }}
 				{{ $active = or $active ( $.IsDescendant .)  }}
@@ -68,7 +68,7 @@
 			</li>
 			{{ end }}
 			{{ if  (gt (len .Site.Home.Translations) 0) }}
-			<li class="nav-item dropdown pt-3 d-none d-lg-block  ">
+			<li class="nav-item dropdown d-none d-lg-block" style="padding-top: 8px;">
 				{{ $langPage := cond (gt (len .Translations) 0) . .Site.Home }}
 				<a class="nav-link {{ $langPage := cond (gt (len .Translations) 0) . .Site.Home }} dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<span class="menu-items-font">{{ $langPage.Language.LanguageName }}</span>
@@ -80,8 +80,8 @@
 				</div>
 			</li>
 			{{ end }}
-			<li class="nav-item pt-4 mr-4" >
-				<a class=" btn-red menu-items-font-white btn-sm active" role="button" target="_blank" href="https://portal.sitewhere.io" >
+			<li class="nav-item pt-3 mr-3 ml-2" >
+				<a class="btn-red menu-items-font-white btn-sm active" role="button" target="_blank" href="https://portal.sitewhere.io" >
 					<span class="menu-items-font-red">Enterprise</span>
 				</a>
 			</li>
