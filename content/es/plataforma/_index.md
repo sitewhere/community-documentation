@@ -1,5 +1,5 @@
 ---
-title: Platform
+title: Plataforma
 
 ---
 
