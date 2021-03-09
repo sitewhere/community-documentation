@@ -93,8 +93,17 @@ Thanks: Addy Osmani, Marcus Haslam
       var activeElement = $items.eq(activeItem),
         prevActiveElement = $items.eq(previousActiveElement);
 
+      debugger
       $ele.trigger('itemBeforeActive', activeElement);
       $ele.trigger('itemBeforeDeactivate', prevActiveElement);
+
+      //***************nuevo*********************//
+      var idLi = activeElement[0].id;
+      var hiddenId = idLi + "-text";
+      var a = document.getElementById(hiddenId).value;
+      document.getElementById("bubu").innerHTML = a;
+      console.log(a)
+      //***************nuevo*********************//
 
       var afterTimeout = setTimeout(function() {
         $ele.trigger('itemActive', activeElement);
