@@ -93,7 +93,6 @@ Thanks: Addy Osmani, Marcus Haslam
       var activeElement = $items.eq(activeItem),
         prevActiveElement = $items.eq(previousActiveElement);
 
-      debugger
       $ele.trigger('itemBeforeActive', activeElement);
       $ele.trigger('itemBeforeDeactivate', prevActiveElement);
 
