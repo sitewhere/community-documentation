@@ -5,31 +5,111 @@
 <script src="/js/jquery.circular-carousel.js"></script>
 <script src="/js/circular-carousel-script.js"></script>
 
-<div class="container-fluid row align-items-center">
-  <div class="col align-self-center" align="center" >
+
+<div class="container-fluid d-flex justify-content-center" style="height: 420px;">
+  <div  class="d-flex align-items-center">
     <div class="controls">
         <a href="#" class="previous btn-link" role="button" type="button"><i class="fa fa-chevron-left"></i></a>
-
     </div>
   </div>
-  <div class="col-md-auto align-self-center justify-content-center" align="center" style="height: 500px; width: 820px;">
+  <div  class="d-flex align-items-start" style=" width: 890px; margin-right: 50px;">
     <div>
       <ul class="carousel">
-        <li class="item active"><img src="/images/logos/logo_google_cloud.webp" class="carousel-row"></li>
-        <li class="item"><img src="/images/logos/logo_amazon.webp" class="carousel-row"></li>
-        <li class="item"><img src="/images/logos/logo_apache.webp" class="carousel-row"></li>
-        <li class="item"><img src="/images/logos/logo_azure.webp" class="carousel-row"></li>
-        <li class="item"><img src="/images/logos/logo_helm.webp" class="carousel-row"></li>
-        <li class="item"><img src="/images/logos/logo_kubernetes.webp" class="carousel-row"></li>
-        <li class="item"><img src="/images/logos/image_open_source.webp" class="carousel-row"></li>
+        <li id="0" class="item active"><img src="/images/carousel/cloud_native.svg" class="carousel-row"></li>
+        <li id="1"  class="item"><img src="/images/carousel/scalable_microservice.svg" class="carousel-row"></li>
+        <li id="2"  class="item"><img src="/images/carousel/kafka_streams.svg" class="carousel-row"></li>
+        <li id="3"  class="item"><img src="/images/carousel/istio_service.svg" class="carousel-row"></li>
+        <li id="4"  class="item"><img src="/images/carousel/advanced_distributed.svg" class="carousel-row"></li>
+        <li id="5"  class="item"><img src="/images/carousel/keycloak_identity.svg" class="carousel-row"></li>
+        <li id="6"  class="item"><img src="/images/carousel/device_management.svg" class="carousel-row"></li>
+        <li id="7"  class="item"><img src="/images/carousel/multiple_inbound.svg" class="carousel-row"></li>
+        <li id="8"  class="item"><img src="/images/carousel/external_system.svg" class="carousel-row"></li>
+        <li id="9"  class="item"><img src="/images/carousel/advanced_multitenancy.svg" class="carousel-row"></li>
       </ul>
     </div>
 
   </div>
-  <div class="col align-self-center" align="center">
+
+  <div class="d-flex align-items-center" >
     <div class="controls">
       <a href="#" class="next btn-link" role="button"><i class="fa fa-chevron-right" ></i></a>
     </div>
   </div>
+
 </div>
 
+<!-- shine -->
+<div class="d-flex justify-content-center" >
+  <img src="/images/home/shine_carousel.svg" alt="" class="" height="150px"/>
+</div>
+
+<!-- button -->
+<div class="d-flex justify-content-center" >
+  <button id="bubu" type="button" class="btn-carousel" style="width:300px" disabled>texto</button>
+</div>
+
+<!-- text box -->
+<div class="d-flex justify-content-end">
+  <div class="card text-white-50 bg-dark card-border-style " style="">
+    <div class="card-body card-inner-style pt-2">
+      <p id="cuadro">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+</div>
+
+
+<!--Textos del boton-->
+<input type="hidden" id="0-text" name="0" value="Cloud Native Implementation">
+<input type="hidden" id="1-text" name="1" value="Scalable Microservice Architecture">
+<input type="hidden" id="2-text" name="2" value="Kafka Streams Data Pipeline">
+<input type="hidden" id="3-text" name="3" value="Istio Service Mesh Integration">
+<input type="hidden" id="4-text" name="4" value="Advanced Distributed Redis Caching">
+<input type="hidden" id="5-text" name="5" value="Keycloak Identity Management">
+<input type="hidden" id="6-text" name="6" value="Device Management Model">
+<input type="hidden" id="7-text" name="7" value="Multiple Inbound Protocols">
+<input type="hidden" id="8-text" name="8" value="External System Integrations">
+<input type="hidden" id="9-text" name="9" value="Advanced Multitenancy">
+
+<!--Textos del cuadro-->
+<input type="hidden" id="0-cardText" name="0" value="SiteWhere is completely cloud-native, using only accepted Kubernetes patterns with no implementation-specific dependencies">
+<input type="hidden" id="1-cardText" name="1" value="All SiteWhere features are implemented as microservices running on a shared infrastructure. Each service may be scaled independently and has own configuration, data processing and persistence.">
+<input type="hidden" id="2-cardText" name="2" value="Data is routed from external sources into a Kafka Streams pipeline which reliably ships data between microservices for processing">
+<input type="hidden" id="3-cardText" name="3" value="Microservices are integrated with Istio Service Mesh for advanced control of ingress networking and inter-microservice communication. This approach supports sophisticated routing rules and cross-cutting features such as distributed tracing.">
+<input type="hidden" id="4-cardText" name="4" value="API calls between microservices are intelligently cached to maximize performance when there are inter-microservice depenedencies">
+<input type="hidden" id="5-cardText" name="5" value="SiteWhere delegates identity management to Keycloak, allowing for single sign-on support in applications that use SiteWhere. SiteWhere instances may share realms or may be isolated for separate users/roles per instance.">
+<input type="hidden" id="6-cardText" name="6" value="Devices and their relationships are captured in a comprehensive data model which is accessible via REST APIs and exposed via clients for Java, JavaScript, and other languages">
+<input type="hidden" id="7-cardText" name="7" value="Inbound device messages may be accepted via MQTT, CoAP, HTTP/REST, WebSockets, and more. Custom message parsing and complex event batching can be supported. Each system tenant can have different event source configurations.">
+<input type="hidden" id="8-cardText" name="8" value="SiteWhere supports integration with many external systems out-of-the-box including AWS SQS, Azure Event Hubs, MQTT brokers, Apache Solr, and many more">
+<input type="hidden" id="9-cardText" name="9" value="Each tenant within a SiteWhere instance has its own persistence stores and data pipeline. This allows for data isolation between tenants and configuration of performance settings on a per-tenant basis.">
+
+<style>
+  .card-border-style {
+    border-radius: 21px;
+
+  }
+  .card-inner-style {
+    width: 543px;
+    height: 120px;
+    border: 4px solid #FF0000;
+    border-radius: 21px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 18px;
+    color: #151A3A;
+    font-size: 1rem;
+
+    text-align: left;
+    letter-spacing: 0px;
+    color: #151A3A;
+    opacity: 0.9;
+  }
+
+  .btn-carousel {
+    background: #FF0000 0% 0% no-repeat padding-box;
+    border-color: transparent;
+    border-radius: 6px;
+    opacity: 1;
+    height: 40px;
+    color: #151A3A;
+    font-family: "Myriad Pro", serif;
+  }
+</style>

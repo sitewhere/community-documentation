@@ -96,6 +96,23 @@ Thanks: Addy Osmani, Marcus Haslam
       $ele.trigger('itemBeforeActive', activeElement);
       $ele.trigger('itemBeforeDeactivate', prevActiveElement);
 
+      //***************nuevo*********************//
+
+      var idLi = activeElement[0].id;
+
+      var hiddenButtonTextId = idLi + "-text";
+      var hiddenCardTextId = idLi + "-cardText";
+
+      var buttonText = document.getElementById(hiddenButtonTextId).value;
+      var cardText = document.getElementById(hiddenCardTextId).value;
+
+
+      document.getElementById("bubu").innerHTML = buttonText;
+      document.getElementById("cuadro").innerHTML =cardText
+
+
+      //***************nuevo*********************//
+
       var afterTimeout = setTimeout(function() {
         $ele.trigger('itemActive', activeElement);
         $ele.trigger('itemAfterDeactivate', prevActiveElement);
