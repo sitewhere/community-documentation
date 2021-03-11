@@ -2,15 +2,15 @@
 title: SiteWhere Control CLI
 linkTitle: SiteWhere Control CLI
 date: 2021-01-20
-description: 'Install `swctl`, the SiteWhere Control CLI to manage SiteWhere deployments'
-
+description: "Install `swctl`, the SiteWhere Control CLI to manage SiteWhere deployments"
 ---
+
 SiteWhere Control CLI `swctl` is a client-side tool that let you control the installation of SiteWhere components in a Kubernetes Cluster and manage the lifecycle of SiteWhere Instances.
 
 ## Prerequistes
 
-* Kubernetes Cluster 1.16+
-* [Istio](https://istio.io) 1.8+ Installed in your cluster. Check Istio setup [documentation](https://istio.io/latest/docs/setup/).
+- Kubernetes Cluster 1.16+
+- [Istio](https://istio.io) 1.8+ Installed in your cluster. Check Istio setup [documentation](https://istio.io/latest/docs/setup/).
 
 If run into docker pull image request limit, use the following command
 
@@ -22,7 +22,7 @@ istioctl install -y --set hub=gcr.io/istio-release
 
 ### Linux install
 
-    curl -L https://github.com/sitewhere/swctl/releases/latest/download/swctl.linux.amd64 -o swctl && \ 
+    curl -L https://github.com/sitewhere/swctl/releases/latest/download/swctl.linux.amd64 -o swctl && \
     chmod +x ./swctl && sudo mv ./swctl /usr/local/bin/swctl
 
 ### macOS Install
@@ -38,24 +38,24 @@ istioctl install -y --set hub=gcr.io/istio-release
 
 This is the list of available commands of **swctl**.
 
-* install: install SiteWhere CRD and Operators.
-* uninstall: uninstall SiteWhere CRD and Operators.
-* create instance: create an instance.
-* create tenant: create a tenant for an instance.
-* delete instance: delete an instance.
-* delete tenant: delete a tenant for an instance.
-* version: print the swctl version information.
+- install: install SiteWhere CRD and Operators.
+- uninstall: uninstall SiteWhere CRD and Operators.
+- create instance: create an instance.
+- create tenant: create a tenant for an instance.
+- delete instance: delete an instance.
+- delete tenant: delete a tenant for an instance.
+- version: print the swctl version information.
 
 ### install
 
 Use this command to install SiteWhere 3.0 on a Kubernetes Cluster.
 This command will install:
 
-* SiteWhere System Namespace: `sitewhere-system`.
-* SiteWhere Custom Resources Definition.
-* SiteWhere Templates.
-* SiteWhere Operator.
-* SiteWhere Infrastructure.
+- SiteWhere System Namespace: `sitewhere-system`.
+- SiteWhere Custom Resources Definition.
+- SiteWhere Templates.
+- SiteWhere Operator.
+- SiteWhere Infrastructure.
 
 ```command
 Usage:
@@ -70,12 +70,12 @@ Flags:
       --skip-operator    Skip Operator installation.
       --skip-templates   Skip Templates installation.
   -w, --wait             Wait for components to be ready before return control.
-````
+```
 
 This is an example of the output produced by the command `swctl install`
 
 ```command
-COMPONENT                       STATUS   
+COMPONENT                       STATUS
 Custom Resource Definitions     Installed
 Templates                       Installed
 Operator                        Installed
@@ -83,7 +83,7 @@ Infrastructure                  Installed
 SiteWhere 3.0 Installed
 ```
 
-This means that **swctl** has install the core components of SiteWhere CE 3.0 on your Kubernetes cluster. 
+This means that **swctl** has install the core components of SiteWhere CE 3.0 on your Kubernetes cluster.
 These components are created under the Namepace `sitewhere-system`.
 
 ### uninstall
@@ -91,11 +91,11 @@ These components are created under the Namepace `sitewhere-system`.
 Uninstall SiteWhere from your Kubernetes Cluster.
 This command will uninstall:
 
-* SiteWhere System Namespace: `sitewhere-system`.
-* SiteWhere Custom Resources Definition.
-* SiteWhere Templates.
-* SiteWhere Operator.
-* SiteWhere Infrastructure.
+- SiteWhere System Namespace: `sitewhere-system`.
+- SiteWhere Custom Resources Definition.
+- SiteWhere Templates.
+- SiteWhere Operator.
+- SiteWhere Infrastructure.
 
 ```command
 Usage:
@@ -121,7 +121,7 @@ If the `--purge` flags has been used, the Namepace `sitewhere-system` would have
 Use this command to create an Instance of SiteWhere.
 For example, to create an instance with name "sitewhere" use:
 
-  swctl create instance sitewhere
+swctl create instance sitewhere
 
 To create an instance with the minimal profile use:
 
@@ -145,12 +145,12 @@ Flags:
   -r, --replicas int32            Number of replicas (default 1)
       --skip-istio-inject         Skip Istio Inject namespace label.
   -t, --tag string                Docker image tag. (default "latest")
-````
+```
 
 This is an example of the output produced by the command `swctl create instance sitewhere`.
 
 ```command
-INSTANCE        STATUS   
+INSTANCE        STATUS
 sitewhere       Installed
 ```
 
@@ -162,7 +162,7 @@ To find the IP address of the Istio Ingress Gateway Host use:
 
 ```console
 kubectl get svc istio-ingressgateway -n istio-system -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
-````
+```
 
 or, if a hostname was assigned, use:
 
@@ -224,8 +224,142 @@ Flags:
 
 For example, to delete a tenant with name `tenant2` for instance `sitewhere` use:
 
-```command 
+```command
 swctl delete tenant tenant2 --instance=sitewhere
+```
+
+### logs
+
+Use this command to show the logs of a SiteWhere Microservice.
+
+```command
+Usage:
+  swctl logs [OPTIONS] INSTANCE MS [flags]
+
+Flags:
+  -f, --follow   Specify if the logs should be streamed.
+  -h, --help     help for logs
+```
+
+For example, to show the logs of `asset-management` for instance `sitewhere` use:
+
+```command
+swctl logs sitewhere asset-management
+```
+
+### log-level
+
+Use this command to show the logs of a SiteWhere Microservice.
+
+```command
+Usage:
+  swctl log-level INSTANCE MS LEVEL [OPTIONS] [flags]
+
+Aliases:
+  log-level, ll
+
+Flags:
+  -h, --help                 help for log-level
+      --logger stringArray   set loggers to change
+```
+
+For example, to change the log level of `asset-management` for instance `sitewhere` to `debug` use:
+
+```command
+swctl log-level sitewhere asset-management debug
+```
+
+### completion
+
+Generate autocompletion scripts for SiteWhere Control CLI for the specified shell.
+
+```command
+Usage:
+  swctl completion [command]
+
+Available Commands:
+  bash        generate autocompletion script for bash
+  fish        generate autocompletion script for fish
+  powershell  generate autocompletion script for powershell
+  zsh         generate autocompletion script for zsh
+
+Flags:
+  -h, --help              help for tenant
+```
+
+### completion bash
+
+Generate the autocompletion script for SiteWhere Control CLI for the bash shell.
+
+To load completions in your current shell session:
+
+```console
+source <(swctl completion bash)
+```
+
+To load completions for every new session, execute once:
+Linux:
+
+```console
+swctl completion bash > /etc/bash_completion.d/swctl
+```
+
+MacOS:
+
+```console
+swctl completion bash > /usr/local/etc/bash_completion.d/swctl
+```
+
+### completion fish
+
+Generate the autocompletion script for SiteWhere Control CLI for the fish shell.
+
+To load completions in your current shell session:
+
+```console
+swctl completion fish | source
+```
+
+To load completions for every new session, execute once:
+
+```console
+swctl completion fish > ~/.config/fish/completions/swctl.fish
+```
+
+You will need to start a new shell for this setup to take effect.
+
+### completion powershell
+
+Generate the autocompletion script for SiteWhere Control CLI for PowerShell.
+
+To load completions in your current shell session:
+
+```console
+swctl.exe completion powershell | Out-String | Invoke-Expression
+```
+
+To load completions for every new session, execute once:
+
+```console
+swctl.exe completion powershell > swctl.exe.ps1
+```
+
+and source this file from your PowerShell profile.
+
+### completion zsh
+
+Generate the autocompletion script for SiteWhere Control CLI for the zsh shell.
+
+To load completions in your current shell session:
+
+```console
+source <(swctl completion zsh)
+```
+
+To load completions for every new session, execute once:
+
+```console
+swctl completion zsh > "${fpath[1]}/_swctl"
 ```
 
 ### version
