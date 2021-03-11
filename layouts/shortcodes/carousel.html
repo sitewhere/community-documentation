@@ -6,27 +6,25 @@
 <script src="/js/circular-carousel-script.js"></script>
 
 
-<div class="container-fluid d-flex justify-content-center" style="height: 400px;">
+<div class="container-fluid d-flex justify-content-center" style="height: 420px;">
   <div  class="d-flex align-items-center">
     <div class="controls">
         <a href="#" class="previous btn-link" role="button" type="button"><i class="fa fa-chevron-left"></i></a>
     </div>
   </div>
-  <div   style=" width: 890px; margin-right: 50px;">
+  <div  class="d-flex align-items-start" style=" width: 890px; margin-right: 50px;">
     <div>
       <ul class="carousel">
-        <li id="0" class="item active">
-         <img src="/images/logos/logo_google_cloud.webp" class="carousel-row">
-        </li>
-        <li id="1" class="item"><img src="/images/logos/logo_amazon.webp" class="carousel-row"></li>
-        <li id="2"  class="item"><img src="/images/logos/logo_apache.webp" class="carousel-row"></li>
-        <li id="3"  class="item"><img src="/images/logos/logo_azure.webp" class="carousel-row"></li>
-        <li id="4"  class="item"><img src="/images/logos/logo_helm.webp" class="carousel-row"></li>
-        <li id="5"  class="item"><img src="/images/logos/logo_kubernetes.webp" class="carousel-row"></li>
-        <li id="6"  class="item"><img src="/images/logos/image_open_source.webp" class="carousel-row"></li>
-        <li id="7"  class="item"><img src="/images/logos/image_open_source.webp" class="carousel-row"></li>
-        <li id="8"  class="item"><img src="/images/logos/image_open_source.webp" class="carousel-row"></li>
-        <li id="9"  class="item"><img src="/images/logos/image_open_source.webp" class="carousel-row"></li>
+        <li id="0" class="item active"><img src="/images/carousel/cloud_native.svg" class="carousel-row"></li>
+        <li id="1"  class="item"><img src="/images/carousel/scalable_microservice.svg" class="carousel-row"></li>
+        <li id="2"  class="item"><img src="/images/carousel/kafka_streams.svg" class="carousel-row"></li>
+        <li id="3"  class="item"><img src="/images/carousel/istio_service.svg" class="carousel-row"></li>
+        <li id="4"  class="item"><img src="/images/carousel/advanced_distributed.svg" class="carousel-row"></li>
+        <li id="5"  class="item"><img src="/images/carousel/keycloak_identity.svg" class="carousel-row"></li>
+        <li id="6"  class="item"><img src="/images/carousel/device_management.svg" class="carousel-row"></li>
+        <li id="7"  class="item"><img src="/images/carousel/multiple_inbound.svg" class="carousel-row"></li>
+        <li id="8"  class="item"><img src="/images/carousel/external_system.svg" class="carousel-row"></li>
+        <li id="9"  class="item"><img src="/images/carousel/advanced_multitenancy.svg" class="carousel-row"></li>
       </ul>
     </div>
 
@@ -40,26 +38,21 @@
 
 </div>
 
-<!-- button -->
-<!--<div class="d-flex justify-content-center" style="margin-top: 100px;">
-
-d-flex align-items-center
-<div class="d-flex justify-content-center" style="margin-top: 50px;">
-  <button id="bubu" type="button" class="btn btn-success" style="height: 40px;">texto</button>
-</div>-->
-
-
+<!-- shine -->
+<div class="d-flex justify-content-center" >
+  <img src="/images/home/shine_carousel.svg" alt="" class="" height="150px"/>
+</div>
 
 <!-- button -->
-<div class="d-flex justify-content-center" style="margin-top: 50px;">
-  <button id="bubu" type="button" class="btn-carousel" disabled>texto</button>
+<div class="d-flex justify-content-center" >
+  <button id="bubu" type="button" class="btn-carousel" style="width:300px" disabled>texto</button>
 </div>
 
 <!-- text box -->
 <div class="d-flex justify-content-end">
-  <div class="card text-white-50 bg-dark mb-3 card-border-style" style="">
-    <div class="card-body card-inner-style">
-      <p id="cuadro" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div class="card text-white-50 bg-dark card-border-style " style="">
+    <div class="card-body card-inner-style pt-2">
+      <p id="cuadro">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
   </div>
 </div>
@@ -81,11 +74,11 @@ d-flex align-items-center
 <input type="hidden" id="0-cardText" name="0" value="SiteWhere is completely cloud-native, using only accepted Kubernetes patterns with no implementation-specific dependencies">
 <input type="hidden" id="1-cardText" name="1" value="All SiteWhere features are implemented as microservices running on a shared infrastructure. Each service may be scaled independently and has own configuration, data processing and persistence.">
 <input type="hidden" id="2-cardText" name="2" value="Data is routed from external sources into a Kafka Streams pipeline which reliably ships data between microservices for processing">
-<input type="hidden" id="3-cardText" name="3" value="SiteWhere microservices integrate with Istio Service Mesh for advanced control of ingress networking and inter-microservice communication. This approach supports sophisticated routing rules and cross-cutting features such as distributed tracing">
+<input type="hidden" id="3-cardText" name="3" value="Microservices are integrated with Istio Service Mesh for advanced control of ingress networking and inter-microservice communication. This approach supports sophisticated routing rules and cross-cutting features such as distributed tracing.">
 <input type="hidden" id="4-cardText" name="4" value="API calls between microservices are intelligently cached to maximize performance when there are inter-microservice depenedencies">
 <input type="hidden" id="5-cardText" name="5" value="SiteWhere delegates identity management to Keycloak, allowing for single sign-on support in applications that use SiteWhere. SiteWhere instances may share realms or may be isolated for separate users/roles per instance.">
 <input type="hidden" id="6-cardText" name="6" value="Devices and their relationships are captured in a comprehensive data model which is accessible via REST APIs and exposed via clients for Java, JavaScript, and other languages">
-<input type="hidden" id="7-cardText" name="7" value="Inbound device messages may be accepted via MQTT, CoAP, HTTP/REST, WebSockets, and many other protocols. Custom message parsing and complex event batching can be supported using scripts associated with event sources. Each system tenant can have different event source configurations.">
+<input type="hidden" id="7-cardText" name="7" value="Inbound device messages may be accepted via MQTT, CoAP, HTTP/REST, WebSockets, and more. Custom message parsing and complex event batching can be supported. Each system tenant can have different event source configurations.">
 <input type="hidden" id="8-cardText" name="8" value="SiteWhere supports integration with many external systems out-of-the-box including AWS SQS, Azure Event Hubs, MQTT brokers, Apache Solr, and many more">
 <input type="hidden" id="9-cardText" name="9" value="Each tenant within a SiteWhere instance has its own persistence stores and data pipeline. This allows for data isolation between tenants and configuration of performance settings on a per-tenant basis.">
 
@@ -96,7 +89,7 @@ d-flex align-items-center
   }
   .card-inner-style {
     width: 543px;
-    height: auto;
+    height: 120px;
     border: 4px solid #FF0000;
     border-radius: 21px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
