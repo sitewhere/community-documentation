@@ -1,6 +1,8 @@
 //
 // Main navbar
 //
+
+/*
 .menu-style {
   background-color: #f2f2f2 !important;
   height: 73px;
@@ -15,6 +17,15 @@
   .navbar-brand {
     text-transform: none;
   }
+}*/
+
+.navbar-style {
+  background-color: #f2f2f2 !important;
+}
+
+/* overwrite collapsed background menu */
+.bg-light {
+  background-color: #f8f9fa !important;
 }
 .logo-menu {
   width: 189px;
@@ -33,8 +44,12 @@
   color: #ffffff !important;
   font-size: 1rem;
 }
-.ul-nav-height {
+.li-nav-height {
   height: 60px;
+}
+
+.dropdown-button {
+  z-index: 1
 }
 
 .btn::before {
@@ -44,6 +59,7 @@
   border-radius: unset;
 }
 .btn:hover {
+  z-index: 0;
   border-bottom-style: solid;
   border-bottom-width: 4px;
   border-bottom-color: #151a3a;
@@ -57,11 +73,6 @@
   padding: 7px 13px;
   border: 2px solid #c21f11;
   text-shadow: 1px 1px #c99;
-}
-
-.dropdown-item {
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 // original navbar customization

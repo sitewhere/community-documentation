@@ -4,7 +4,7 @@
 {{ $siteTitle := (.Site.Title) }}
 
 {{ if eq $siteTitle $title }}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-style">
 
 	<div class="flex-grow-1">
 		<a class="navbar-brand" aria-current="page" href="{{ .Site.Home.RelPermalink }}">
@@ -12,26 +12,28 @@
 		</a>
 	</div>
 
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+		<span class="navbar-toggler-icon">
+			<i class="fas fa-bars" style="color:#F92216; font-size:28px;"></i>
+		</span>
 	</button>
 
 	<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-		<ul class="navbar-nav">
+		<ul class="navbar-nav menu-items-font">
 
 			{{ $p := . }}
 			{{ range .Site.Menus.main }}
 
 			{{- if .HasChildren }}
 			<!-- menu item with dropdown -->
-			<li class="nav-item dropdown">
+			<li class="nav-item dropdown btn li-nav-height" style="z-index: 2">
 				{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
 				{{ with .Page }}
 				{{ $active = or $active ( $.IsDescendant .)  }}
 				{{ end }}
 				{{ $url := urls.Parse .URL }}
 				{{ $baseurl := urls.Parse $.Site.Params.Baseurl }}
-				<a {{ if .Identifier }}id="{{ .Identifier }}"{{ end }} class="nav-link dropdown-toggle {{if $active }} active{{end}}" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span class="menu-items-font">{{ .Name }}</span></a>
+				<a {{ if .Identifier }}id="{{ .Identifier }}"{{ end }} class="nav-link dropdown-toggle {{if $active }} active{{end}} " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" {{ if ne $url.Host $baseurl.Host }}target="_blank" {{ end }}><span class="menu-items-font">{{ .Name }}</span></a>
 
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					{{ range .Children }}
@@ -44,7 +46,7 @@
 
 			{{- else }}
 			<!-- menu item -->
-			<li class="nav-item">
+			<li class="nav-item btn li -nav-height">
 				{{ $active := or ($p.IsMenuCurrent "main" .) ($p.HasMenuCurrent "main" .) }}
 				{{ with .Page }}
 				{{ $active = or $active ( $.IsDescendant .)  }}
@@ -58,13 +60,13 @@
 			{{ end }}
 
 			{{ if  .Site.Params.versions }}
-			<li class="nav-item dropdown d-none d-lg-block">
+			<li class="nav-item dropdown d-none d-lg-block li-nav-height">
 				{{ partial "navbar-version-selector.html" . }}
 			</li>
 			{{ end }}
 			{{ if  (gt (len .Site.Home.Translations) 0) }}
 			<!-- language -->
-			<li class="nav-item dropdown">
+			<li class="nav-item dropdown btn li-nav-height" style="z-index: 1">
 				{{ $langPage := cond (gt (len .Translations) 0) . .Site.Home }}
 				<a class="nav-link {{ $langPage := cond (gt (len .Translations) 0) . .Site.Home }} dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<span class="menu-items-font">{{ $langPage.Language.LanguageName }}</span>
@@ -91,8 +93,6 @@
 
 <style>
 
-	.navbar-style {
 
-	}
 </style>
 
