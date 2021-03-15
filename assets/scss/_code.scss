@@ -172,6 +172,11 @@
 .logo-performance {
   width: 590px;
   height: 385px;
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    width: 287px !important;
+    height: 240px;
+  }
 }
 
 // section 6
