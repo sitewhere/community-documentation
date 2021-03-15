@@ -15,12 +15,18 @@ fonts home
  color: #151A3A;
  font-size: 2.4rem;
  margin-bottom: 0;
+ @media (max-width: 576px) {
+  font-size: 1.3rem;
+ }
 }
 
 .section-1-sub-title {
  @extend .font-myriad-regular;
  color: #3682EA;
  font-size: 2.4rem;
+ @media (max-width: 576px) {
+  font-size: 1.3rem;
+ }
 }
 
 .section-text {
@@ -28,6 +34,9 @@ fonts home
  color: #000000;
  font-size: 1.313rem;
  margin-bottom: 0;
+ @media (max-width: 576px) {
+  font-size: 0.9rem;
+ }
 }
 
 .section-title-white {
@@ -35,6 +44,9 @@ fonts home
  color: #ffffff;
  font-size: 2.536rem;
  margin-bottom: 0;
+ @media (max-width: 576px) {
+  font-size: 1.3rem;
+ }
 }
 
 .section-text-white {
@@ -42,6 +54,9 @@ fonts home
  color: #ffffff;
  font-size: 1.313rem;
  margin-bottom: 0;
+ @media (max-width: 576px) {
+  font-size: 0.9rem;
+ }
 }
 // font footer
 .footer-white-font {

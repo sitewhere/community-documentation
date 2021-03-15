@@ -150,6 +150,14 @@
   height: 100px;
 }
 
+.first-section-xs-margin {
+  height: 0px;
+  @media (max-width: 576px) {
+    height: 250px;
+  }
+
+}
+
 // carousel
 .carousel-row {
   height: 200px;
