@@ -110,7 +110,16 @@
   @media (min-width: 1200px) {
     padding-top: 5rem !important;
   }
+  @media (max-width: 576px) {
+    background-image: url("/images/background/mobile/fondo_02.webp");
+    background-position: center center;
+    height: 640px;
+  }
 }
+.third-bg-space-xs {
+  height: 300px;
+}
+
 .fourth-background {
   background-image: url("/images/background/fourth_background.webp");
   border: 1px solid #707070;
@@ -126,12 +135,24 @@
   @media (min-width: 1200px) {
     padding-top: 5rem !important;
   }
+  @media (max-width: 576px) {
+    background-image: url("/images/background/mobile/fondo_03.webp");
+    background-position: center center;
+    height: 607px;
+  }
 }
 .fifth-background {
   margin-left: 0px;
   padding-bottom: 0px !important;
   padding-top: 0px !important;
   background-color: #FF0000;
+}
+.fifth-background-xs {
+  background-image: url("/images/background/mobile/imagen_02.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 420px;
 }
 
 .sixth-background {
@@ -150,7 +171,19 @@
   @media (min-width: 1601px) {
     padding-top: 5rem !important;
   }
+  @media (max-width: 576px) {
+    background-image: url("/images/background/mobile/fondo_04bis.webp");
+    background-position: center center;
+    height: 640px;
+  }
 }
+.s6-margin-top-xs{
+  height: 0px;
+  @media (max-width: 576px) {
+   margin-top: 200px;
+  }
+}
+
 .seventh-background {
   background-image:url('/images/background/seventh_background.webp');
   background-color: #151A3A;
@@ -161,6 +194,11 @@
   margin-left: 0px;
   min-height: 900px;
   height: 90vh;
+  @media (max-width: 576px) {
+    background-image: url("/images/background/mobile/fondo_05.webp");
+    background-position: center center;
+    height: 560px;
+  }
 }
 
 // section -1
@@ -204,6 +242,10 @@
 .logo-cloud-lock {
   width: 287px;
   height: 167px;
+  @media (max-width: 576px) {
+    width: 116px;
+    height: 70px;
+  }
 }
 .logo-open-source {
   height: 200px;
