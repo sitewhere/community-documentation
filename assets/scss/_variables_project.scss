@@ -95,8 +95,8 @@ Style footer
 .img-footer {
  height: 100px;
  // Small devices (landscape phones, 576px and up)
- @media (min-width: 576px) {
-  height: 80px;
+ @media (max-width: 576px) {
+  height: 75px;
  }
 }
 

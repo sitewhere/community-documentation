@@ -63,14 +63,42 @@
   margin-right: -15px !important;
   display: flex;
   flex-wrap: wrap;
-
+  @media (max-width: 576px) {
+    background-image: url("/images/background/mobile/fondo_01.webp");
+    background-size: cover !important;
+    background-position: center center !important;
+    height: 94vh;
+    -webkit-background-size: calc(100vw) calc(100vh);
+    -moz-background-size: calc(100vw) calc(100vh);
+    -o-background-size: calc(100vw) calc(100vh);
+    background-size: calc(100vw) calc(100vh);
+  }
 }
+.td-main {
+  @media (max-width: 576px) {
+    height: 94vh !important;
+  }
+}
+.td-outer {
+  @media (max-width: 576px) {
+    height: 94vh !important;
+  }
+}
+
 .second-background {
   margin-left: 0px;
   padding-bottom: 0px !important;
   padding-top: 0px !important;
   background-color: #FF0000;
 }
+.second-background-xs {
+  background-image: url("/images/background/mobile/imagen_01.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 180px;
+}
+
 .third-background {
   background-image: url("/images/background/third_background.webp");
   height: 68vh;
@@ -143,17 +171,25 @@
 .logo {
   width: 130px;
   height: 110px;
+  @media (max-width: 576px) {
+    width: 78px;
+    height: 75px;
+  }
 }
 
 .logo-row {
   width: 100px;
   height: 100px;
+  @media (max-width: 576px) {
+    width: 65px;
+    height: 65px;
+  }
 }
 
 .first-section-xs-margin {
   height: 0px;
   @media (max-width: 576px) {
-    height: 250px;
+    height: 33vh;
   }
 
 }
@@ -181,7 +217,7 @@
   width: 590px;
   height: 385px;
   // Small devices (landscape phones, 576px and up)
-  @media (min-width: 576px) {
+  @media (max-width: 576px) {
     width: 287px !important;
     height: 240px;
   }
