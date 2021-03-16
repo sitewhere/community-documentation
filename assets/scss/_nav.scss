@@ -23,10 +23,6 @@
   background-color: #f2f2f2 !important;
 }
 
-/* overwrite collapsed background menu */
-.bg-light {
-  background-color: #f8f9fa !important;
-}
 .logo-menu {
   width: 189px;
   height: 50px;
@@ -39,7 +35,6 @@
 }
 
 .menu-items-font-white {
-  margin-left: 20px;
   font-weight: 500;
   color: #ffffff !important;
   font-size: 1rem;
@@ -68,11 +63,35 @@
 }
 
 .btn-red {
-  background-color: #fa210f;
+  background-image:url('/images/background/menu/red_button.webp');
   border-radius: 4px !important;
   padding: 7px 13px;
-  border: 2px solid #c21f11;
+  margin: 0px;
   text-shadow: 1px 1px #c99;
+}
+
+// collapsed menu styles
+
+/* overwrites collapsed background menu */
+.bg-light {
+  background-image:url('/images/background/menu/collapsed_background.webp');
+}
+
+/* overwrites menu-item */
+@media (max-width: 992px) {
+
+  .btn-red {
+    width: auto;
+  }
+  .btn:hover {
+    z-index: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: #F92216;
+    border-radius: unset;
+    filter: brightness(1);
+  }
+
 }
 
 // original navbar customization
