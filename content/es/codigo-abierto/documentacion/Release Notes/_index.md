@@ -6,6 +6,18 @@ description: Track new features and bug fixes added in SiteWhere releases
 
 
 ---
+#### [**SiteWhere 3.0.5**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.5) (Installable via [swctl TBA](https://github.com/sitewhere/swctl/releases/tag/vTBA))
+
+
+###### _Bugs Fixed_
+* Add instance id as part of the MQTT Topic name ([#940](https://github.com/sitewhere/sitewhere/issues/940))
+* Event source id not propagated into preprocessed event payload ([#956](https://github.com/sitewhere/sitewhere/issues/956))
+* Asset and asset type caching not updated for create/update/delete ([#957](https://github.com/sitewhere/sitewhere/issues/957))
+* Database substitution tenant_${tenant.id} wildcard of influx is not properly resolved ([#953](https://github.com/sitewhere/sitewhere/issues/953))
+* Command delivery is not available，“Unhandled exception in producer while sending record.” ([#950](https://github.com/sitewhere/sitewhere/issues/950))
+* List Tenants REST API is not filtering by authUserId ([#902](https://github.com/sitewhere/sitewhere/issues/902))
+
+---
 #### [**SiteWhere 3.0.4**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.4) (Installable via [swctl 0.7.0](https://github.com/sitewhere/swctl/releases/tag/v0.7.0))
 
 
