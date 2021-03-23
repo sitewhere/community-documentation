@@ -7,7 +7,7 @@ description: Track new features and bug fixes added in SiteWhere releases
 
 ---
 #### SiteWhere 3.0.5
-Release [**SiteWhere 3.0.5**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.5) (Installable via [swctl TBA](https://github.com/sitewhere/swctl/releases/tag/vTBA))
+Release [**SiteWhere 3.0.5**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.5) (Installable via [swctl v0.9.2](https://github.com/sitewhere/swctl/releases/tag/v0.9.2))
 
 
 ###### _Bugs Fixed_
