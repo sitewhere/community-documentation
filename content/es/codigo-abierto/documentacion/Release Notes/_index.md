@@ -6,7 +6,8 @@ description: Track new features and bug fixes added in SiteWhere releases
 
 
 ---
-#### [**SiteWhere 3.0.5**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.5) (Installable via [swctl TBA](https://github.com/sitewhere/swctl/releases/tag/vTBA))
+#### [**SiteWhere 3.0.5**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.5) 
+(Installable via [swctl TBA](https://github.com/sitewhere/swctl/releases/tag/vTBA))
 
 
 ###### _Bugs Fixed_
@@ -18,7 +19,8 @@ description: Track new features and bug fixes added in SiteWhere releases
 * List Tenants REST API is not filtering by authUserId ([#902](https://github.com/sitewhere/sitewhere/issues/902))
 
 ---
-#### [**SiteWhere 3.0.4**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.4) (Installable via [swctl 0.7.0](https://github.com/sitewhere/swctl/releases/tag/v0.7.0))
+#### [**SiteWhere 3.0.4**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.4) 
+(Installable via [swctl 0.7.0](https://github.com/sitewhere/swctl/releases/tag/v0.7.0))
 
 
 ###### _Bugs Fixed_
@@ -28,19 +30,22 @@ description: Track new features and bug fixes added in SiteWhere releases
 * Calling API for ending an assignment results in 415 response when called from admin UI ([#944](https://github.com/sitewhere/sitewhere/issues/944))
 
 ---
-#### [**SiteWhere 3.0.3**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.3) (Installable via [swctl 0.6.0](https://github.com/sitewhere/swctl/releases/tag/v0.6.0))
+#### [**SiteWhere 3.0.3**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.3) 
+(Installable via [swctl 0.6.0](https://github.com/sitewhere/swctl/releases/tag/v0.6.0))
 
 ###### _Features_
 * Support extra name/description metadata in SiteWhereInstance CRD ([#935](https://github.com/sitewhere/sitewhere/issues/935))
 
 ---
-#### [**SiteWhere 3.0.2**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.2) (Installable via [swctl 0.4.4](https://github.com/sitewhere/swctl/releases/tag/v0.4.4))
+#### [**SiteWhere 3.0.2**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.2) 
+(Installable via [swctl 0.4.4](https://github.com/sitewhere/swctl/releases/tag/v0.4.4))
 
 ###### _Bugs Fixed_
 * MQTT outbound connector not properly using outbound topic configuration ([#932](https://github.com/sitewhere/sitewhere/issues/932))
 
 ---
-#### [**SiteWhere 3.0.1**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.1) (Installable via [swctl 0.4.2](https://github.com/sitewhere/swctl/releases/tag/v0.4.2))
+#### [**SiteWhere 3.0.1**](https://github.com/sitewhere/sitewhere/releases/tag/v3.0.1) 
+(Installable via [swctl 0.4.2](https://github.com/sitewhere/swctl/releases/tag/v0.4.2))
 
 ###### _Bugs Fixed_
 * Instance management microservice not retrying when Keycloak not available ([#923](https://github.com/sitewhere/sitewhere/issues/923))
