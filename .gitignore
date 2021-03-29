@@ -6,3 +6,4 @@ tech-doc-hugo
 
 # Editor directories and files
 .idea
+.DS_Store

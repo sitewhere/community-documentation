@@ -62,17 +62,18 @@ Usage:
   swctl install [flags]
 
 Flags:
-      --chart-version string    SiteWhere Infrastructure Helm Chart version to use. (default "0.1.10")
-  -h, --help                    help for install
-      --kafka-pvc-size string   Kafka PVC Storage Size.
-  -m, --minimal                 Install minimal infrastructure.
-  -o, --output format           prints the output in the specified format. Allowed values: table, json, yaml (default table)
-      --skip-crd                Skip Custom Resource Definition installation.
-      --skip-infra              Skip Infrastructure installation.
-      --skip-operator           Skip Operator installation.
-      --skip-templates          Skip Templates installation.
-  -s, --storage-class string    Storage Class of infrastructure components.
-  -w, --wait                    Wait for components to be ready before return control.
+      --chart-version string       SiteWhere Infrastructure Helm Chart version to use. (default "0.1.12")
+  -h, --help                       help for install
+      --influxdb-pvc-size string   InfluxDB PVC Storage Size.
+      --kafka-pvc-size string      Kafka PVC Storage Size.
+  -m, --minimal                    Install minimal infrastructure.
+  -o, --output format              prints the output in the specified format. Allowed values: table, json, yaml (default table)
+      --skip-crd                   Skip Custom Resource Definition installation.
+      --skip-infra                 Skip Infrastructure installation.
+      --skip-operator              Skip Operator installation.
+      --skip-templates             Skip Templates installation.
+  -s, --storage-class string       Storage Class of infrastructure components.
+  -w, --wait                       Wait for components to be ready before return control.
 ```
 
 This is an example of the output produced by the command `swctl install`
