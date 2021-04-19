@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="/styles.css" rel="stylesheet">
+</head>
+
+<body class="relative">
+
+  <div class="bg-hero bg-center bg-cover px-4">
+
+    <div id="herogradient">
+
+    <header class="max-w-5xl mx-auto flex flex-row items-center py-3 text-white">
+
+      <a href="#">
+        <img src="assets/logo_header2.svg" alt="SiteWhere logo" class="h-8">
+      </a>
+
+      <button class="md:hidden ml-auto js-menu-open">
+        <img src="assets/icon_hamburger.svg" alt="menu icon" class="w-6">
+      </button>
+
+      <nav id="mobile-nav" class="hidden md:hidden bg-white text-gray-900 absolute top-0 left-0 w-full h-full z-50">
+        <div class="sticky top-0 w-screen h-screen">
+
+          <div class="flex flex-row justify-between items-center p-4">
+            <img src="assets/logo_icon2.svg" alt="SiteWhere icon" class="h-8">
+
+            <button class="js-menu-close">
+              <img src="assets/icon_close.svg" alt="menu icon" class="w-6">
+            </button>
+          </div>
+
+          <div class="text-center mt-12 mb-8 mx-4">
+
+            <a href="/open-source/documentation/platform-overview/" class="block text-2xl my-4 hover:underline">Platform</a>
+            <a href="#" class="block text-2xl my-4 hover:underline">Industries</a>
+            <a href="#" class="block text-2xl my-4 hover:underline">Use Cases</a>
+            <a href="/open-source/documentation/" class="block text-2xl my-4 hover:underline">Documentation</a>
+            <a href="/open-source/community/" class="block text-2xl my-4 hover:underline">Community</a>
+            <a href="/open-source/blog/" class="block text-2xl my-4 hover:underline">Blog</a>
+            <a href="#" class="block text-2xl my-4 hover:underline">Company</a>
+            <a href="#" class="block text-2xl my-4 hover:underline">Español</a>
+
+          </div>
+
+        </div>
+      </nav>
+
+      <nav class="hidden md:flex ml-auto">
+
+        <div class="py-1 px-2">
+          <a href="#" class="hover:underline">Platform</a>
+        </div>
+
+        <div class="py-1 px-2">
+          <a href="#" class="hover:underline">Industries</a>
+        </div>
+
+        <div class="py-1 px-2">
+          <a href="#" class="hover:underline">Use Cases</a>
+        </div>
+
+        <div class="py-1 px-2 group relative cursor-default">
+          <span>Open Source</span>
+
+          <div class="hidden group-hover:block absolute pt-1">
+            <div class="bg-white text-gray-900 px-3 py-2">
+
+              <div class="my-1 hover:underline"><a href="#">Documentation</a></div>
+              <div class="my-1 hover:underline"><a href="#">Community</a></div>
+              <div class="my-1 hover:underline"><a href="#">Blog</a></div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="py-1 px-2">
+          <a href="#" class="hover:underline">Company</a>
+        </div>
+
+        <div class="py-1 px-2">
+          <a href="#" class="hover:underline">Español</a>
+        </div>
+
+      </nav>
+
+    </header>
+
+    <section id="hero" class="text-white">
+
+      <div class="lg:flex flex-row items-start lg:w-max lg:mx-auto py-24 sm:py-36 md:py-44 lg:py-56">
+
+
+        <img src="assets/logo_icon2.svg" alt="Logo" class="w-36 mr-20 mb-4 lg:mb-0 mt-3 lg:w-80 xl:w-96" id="SiteWhere-glyph">
+
+        <div>
+          <div class="max-w-lg lg:max-w-xl xl:max-w-2xl">
+            <h1 class="text-4xl-em font-bold">Cloud Native IoT Application Enablement Platform</h1>
+            <p class="text-lg-em mt-2">Deploy customized, portable IoT solutions including infrastructure and services to any cloud that supports
+              Kubernetes.</p>
+          </div>
+
+          <div class="flex flex-row items-end mt-4 sm:mt-6" id="platform-icons">
+            <img src="assets/icons/kubernetes.svg" alt="Kubernetes logo" class="w-20 sm:w-32 mr-4 sm:mr-6" id="kubernetes">
+              <div class="flex flex-row items-end">
+                <img src="assets/icons/aws.svg" alt="AWS logo" class="w-10 sm:w-16 mr-4 sm:mr-6" id="aws">
+                <img src="assets/icons/google-cloud.svg" alt="Google Cloud logo" class="w-20 sm:w-28 mr-4 sm:mr-6" id="google-cloud">
+                <img src="assets/icons/azure.svg" alt="Azure logo" class="w-10 sm:w-16 mr-4 sm:mr-6" id="azure">
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <p class="text-right pb-2 text-xs text-gray-400">Photo by <a class="underline" href="https://unsplash.com/@pierreaxel_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Pierre-Axel Cotteret</a></p>
+
+    </div>
+
+  </div>
+
+  <div class="md:flex flex-row items-stretch">
+
+    <section id="avoid-lock-in" class="md:w-1/2 bg-red-dark text-white border-white border-opacity-custom border-2 border-b md:border-r md:border-b-2">
+      <div class="px-4 py-16 xl:py-28 mx-auto text-center">
+
+        <img src="assets/icons/cloud-rainbow.svg" alt="Cloud with lock icon" class="mb-6 lg:mb-7 xl:mb-8 w-20 xl:w-24 mx-auto" id="cloud">
+
+        <h2 class="text-2xl-em font-bold max-w-sm mx-auto">Avoid Lock-In and Deploy to Any Cloud</h2>
+
+        <p class="mt-4 text-sm-em max-w-sm mx-auto xl:max-w-xl">Prevent your IoT solution from being tied to a single cloud provider. SiteWhere embraces the cloud-native ecosystem of Kubernetes and may be deployed to any provider that supports Kubernetes. Benefit from the huge ecosystem of projects already running on Kubernetes.</p>
+
+      </div>
+    </section>
+
+    <section id="open-source" class="md:w-1/2 bg-blue-dark text-white border-white border-opacity-custom border-2 border-t md:border-l md:border-t-2">
+      <div class="px-4 py-16 xl:py-28 mx-auto text-center">
+
+        <div class="flex flex-row justify-center mb-6" id="opensource-icons">
+          <img src="assets/icons/open-source-core.svg" alt="Open source icon" class="w-14 sm:w-16 xl:w-20 mr-4 md:mr-6" id="opensource">
+          <div class="flex flex-row">
+            <img src="assets/icons/apache.svg" alt="Apache 2.0 logo" class="w-12 sm:w-14 xl:w-16 mr-4 md:mr-6" id="apache">
+            <img src="assets/icons/cncf-stacked-white.svg" alt="Cloud Native computing foundation logo" class="w-20 sm:w-24 xl:w-28 mr-4 md:mr-6" id="cncf">
+            <img src="assets/icons/helm-horizontal-white.svg" alt="Helm logo" class="w-14 sm:w-16 xl:w-20 mr-4 md:mr-6" id="helm">
+          </div>
+        </div>
+
+        <h2 class="text-2xl-em font-bold max-w-sm mx-auto">Build on an Open Source Core for Maximum Clarity</h2>
+        <p class="mt-4 text-sm-em max-w-sm mx-auto xl:max-w-xl">The core libraries, microservices and tooling for SiteWhere are made available as open source under the Apache 2.0 license. Understand the code running your IoT platform rather than using a "black box" system offered by many cloud providers. SiteWhere embraces the CNCF ecosystem and leverages technologies such as Kubernetes and Helm that are the core of the movement.</p>
+
+      </div>
+    </section>
+
+  </div>
+
+  <section id="performance" class="bg-performance-and-scalability bg-center bg-cover text-white">
+
+    <div id="performancegradient">
+
+    <div class="content max-w-2xl xl:max-w-4xl text-center mx-auto px-4 py-32 sm:py-56 md:py-72">
+
+      <h1 class="text-4xl-em font-bold">Designed with Performance and Scalability in Mind</h1>
+      <p class="text-sm-em mt-3">SiteWhere leverages many of the technologies used by the largest technology companies on the internet. An event pipeline based on Apache Kafka Streams moves device event data from sources such as MQTT and CoAP, stores it in highly-scalable time series databases, and allows data to be integrated with many of the most popular third-party systems.</p>
+
+    </div>
+
+    <p class="text-right pb-2 px-3 text-xs text-gray-400">Photo by <a class="underline" href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">NASA</a></p>
+
+    </div>
+
+  </section>
+
+  <section id="features" class="bg-blue-dark text-white">
+
+    <div class="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 border-white border-opacity-custom border-t-2 border-l-2">
+
+      <div class="custom-grid-item relative">
+        <div class="flex flex-col items-center text-center absolute max-w-full top-0 bottom-0 right-0 left-0 m-auto p-12 xs:p-4 sm:p-8 md:p-12 border-white border-opacity-custom border-b-2 border-r-2">
+
+          <img src="assets/icons/cloud_native.svg" alt="" class="w-20 xs:w-14 md:w-20 mb-4">
+
+          <h3 class="font-bold text-xl-em mb-1">Cloud Native Implementation</h3>
+
+          <p class="text-sm-em">SiteWhere is completely cloud-native, using only accepted Kubernetes patterns with no implementation-specific dependencies</p>
+
+        </div>
+      </div>
+
+      <div class="custom-grid-item relative">
+        <div class="flex flex-col items-center text-center absolute max-w-full top-0 bottom-0 right-0 left-0 m-auto p-12 xs:p-4 sm:p-8 md:p-12 border-white border-opacity-custom border-b-2 border-r-2">
+
+          <img src="assets/icons/scalable_microservice.svg" alt="" class="w-20 xs:w-14 md:w-20 mb-4">
+          <h3 class="font-bold text-xl-em mb-1">Scalable Microservice Architecture</h3>
+          <p class="text-sm-em">All SiteWhere features are implemented as microservices running on a shared infrastructure. Each service may be scaled independently and has own configuration, data processing and persistence.</p>
+
+        </div>
+      </div>
+
+      <div class="custom-grid-item relative">
+        <div class="flex flex-col items-center text-center absolute max-w-full top-0 bottom-0 right-0 left-0 m-auto p-12 xs:p-4 sm:p-8 md:p-12 border-white border-opacity-custom border-b-2 border-r-2">
+
+          <img src="assets/icons/kafka_streams.svg" alt="" class="w-20 xs:w-14 md:w-20 mb-4">
+          <h3 class="font-bold text-xl-em mb-1">Kafka Streams Data Pipeline</h3>
+          <p class="text-sm-em">Data is routed from external sources into a Kafka Streams pipeline which reliably ships data between microservices for processing</p>
+
+        </div>
+      </div>
+
+      <div class="custom-grid-item relative">
+        <div class="flex flex-col items-center text-center absolute max-w-full top-0 bottom-0 right-0 left-0 m-auto p-12 xs:p-4 sm:p-8 md:p-12 border-white border-opacity-custom border-b-2 border-r-2">
+
+          <img src="assets/icons/istio_service.svg" alt="" class="w-20 xs:w-14 md:w-20 mb-4">
+          <h3 class="font-bold text-xl-em mb-1">Istio Service Mesh Integration</h3>
+          <p class="text-sm-em">Microservices are integrated with Istio Service Mesh for advanced control of ingress networking and inter-microservice communication. This approach supports sophisticated routing rules and cross-cutting features such as distributed tracing.</p>
+
+        </div>
+      </div>
+
+      <div class="custom-grid-item relative">
+        <div class="flex flex-col items-center text-center absolute max-w-full top-0 bottom-0 right-0 left-0 m-auto p-12 xs:p-4 sm:p-8 md:p-12 border-white border-opacity-custom border-b-2 border-r-2">
+
+          <img src="assets/icons/advanced_distributed.svg" alt="" class="w-20 xs:w-14 md:w-20 mb-4">
+          <h3 class="font-bold text-xl-em mb-1">Advanced Distributed Redis Caching</h3>
+          <p class="text-sm-em">API calls between microservices are intelligently cached to maximize performance when there are inter-microservice depenedencies</p>
+
+        </div>
+      </div>
+
+      <div class="custom-grid-item relative">
+        <div class="flex flex-col items-center text-center absolute max-w-full top-0 bottom-0 right-0 left-0 m-auto p-12 xs:p-4 sm:p-8 md:p-12 border-white border-opacity-custom border-b-2 border-r-2">
+
+          <img src="assets/icons/keycloak_identity.svg" alt="" class="w-20 xs:w-14 md:w-20 mb-4">
+          <h3 class="font-bold text-xl-em mb-1">Keycloak Identity Management</h3>
+          <p class="text-sm-em">SiteWhere delegates identity management to Keycloak, allowing for single sign-on support in applications that use SiteWhere. SiteWhere instances may share realms or may be isolated for separate users/roles per instance.</p>
+
+        </div>
+      </div>
+
+      <div class="custom-grid-item relative">
+        <div class="flex flex-col items-center text-center absolute max-w-full top-0 bottom-0 right-0 left-0 m-auto p-12 xs:p-4 sm:p-8 md:p-12 border-white border-opacity-custom border-b-2 border-r-2">
+
+          <img src="assets/icons/device_management.svg" alt="" class="w-20 xs:w-14 md:w-20 mb-4">
+          <h3 class="font-bold text-xl-em mb-1">Device Management Model</h3>
+          <p class="text-sm-em">Devices and their relationships are captured in a comprehensive data model which is accessible via REST APIs and exposed via clients for Java, JavaScript, and other languages</p>
+
+        </div>
+      </div>
+
+      <div class="custom-grid-item relative">
+        <div class="flex flex-col items-center text-center absolute max-w-full top-0 bottom-0 right-0 left-0 m-auto p-12 xs:p-4 sm:p-8 md:p-12 border-white border-opacity-custom border-b-2 border-r-2">
+
+          <img src="assets/icons/multiple_inbound.svg" alt="" class="w-20 xs:w-14 md:w-20 mb-4">
+          <h3 class="font-bold text-xl-em mb-1">Multiple Inbound Protocols</h3>
+          <p class="text-sm-em">Inbound device messages may be accepted via MQTT, CoAP, HTTP/REST, WebSockets, and more. Custom message parsing and complex event batching can be supported. Each system tenant can have different event source configurations.</p>
+
+        </div>
+      </div>
+
+      <div class="custom-grid-item relative">
+        <div class="flex flex-col items-center text-center absolute max-w-full top-0 bottom-0 right-0 left-0 m-auto p-12 xs:p-4 sm:p-8 md:p-12 border-white border-opacity-custom border-b-2 border-r-2">
+
+          <img src="assets/icons/external_system.svg" alt="" class="w-20 xs:w-14 md:w-20 mb-4">
+          <h3 class="font-bold text-xl-em mb-1">External System Integrations</h3>
+          <p class="text-sm-em">SiteWhere supports integration with many external systems out-of-the-box including AWS SQS, Azure Event Hubs, MQTT brokers, Apache Solr, and many more</p>
+
+        </div>
+      </div>
+
+      <div class="custom-grid-item relative">
+        <div class="flex flex-col items-center text-center absolute max-w-full top-0 bottom-0 right-0 left-0 m-auto p-12 xs:p-4 sm:p-8 md:p-12 border-white border-opacity-custom border-b-2 border-r-2">
+
+          <img src="assets/icons/advanced_multitenancy.svg" alt="" class="w-20 xs:w-14 md:w-20 mb-4">
+          <h3 class="font-bold text-xl-em mb-1">Advanced Multitenancy</h3>
+          <p class="text-sm-em">Each tenant within a SiteWhere instance has its own persistence stores and data pipeline. This allows for data isolation between tenants and configuration of performance settings on a per-tenant basis.</p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer id="footer" class="pt-12 pb-24 px-4 sm:px-8 md:px-16 text-white">
+
+    <div class="flex flex-row flex-wrap lg:flex-nowrap">
+
+      <div class="flex-grow mr-12 lg:mr-20 xs:flex flex-row flex-wrap lg:flex-nowrap" id="footercol">
+
+        <div class="mb-8 mr-12 w-max">
+          <h4 class="text-xl-em font-bold">SiteWhere</h4>
+          <a class="block text-base-em my-2" href="#">Platform</a>
+          <a class="block text-base-em my-2" href="#">Industries</a>
+          <a class="block text-base-em my-2" href="#">Use Cases</a>
+          <a class="block text-base-em my-2" href="#">Company</a>
+        </div>
+
+        <div class="mb-8 mr-12 w-max">
+          <h4 class="text-xl-em font-bold">Platform</h4>
+          <a class="block my-2" href="#">Overview</a>
+          <a class="block my-2" href="#">Features</a>
+          <a class="block my-2" href="#">Demo</a>
+          <a class="block my-2" href="#">Pricing</a>
+        </div>
+
+        <div class="mb-8 mr-12 w-max">
+          <h4 class="text-xl-em font-bold">Industries</h4>
+          <a class="block text-base-em my-2" href="#">Industrial Monitoring</a>
+          <a class="block text-base-em my-2" href="#">Smart Environment</a>
+          <a class="block text-base-em my-2" href="#">Tracking</a>
+          <a class="block text-base-em my-2" href="#">Smart Parking</a>
+        </div>
+
+        <div class="mb-8 w-max">
+          <h4 class="text-xl-em font-bold">Open Source</h4>
+          <a class="block text-base-em my-2" href="#">Community</a>
+          <a class="block text-base-em my-2" href="#">Blog</a>
+        </div>
+
+      </div>
+
+      <div class="w-max lg:w-2/5">
+
+        <img src="assets/logo_footer2.svg" alt="SiteWhere logo" class="w-96 mt-8 mb-6">
+        <p class="text-xs-em max-w-md">Sitewhere is an enterprise IoT platform that makes it easy to build connected solutions that produce real-time results.</p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="assets/mobile-nav.js"></script>
+
+  <script src="vendor/textblock.min.js"></script>
+  <script>
+    Textblock([
+      {
+        target: "#hero h1",
+        minWidth: 289,
+        maxWidth: 672,
+        maxWidthFontSize: 2.5,
+        minWidthFontSize: 2.2,
+        minWidthLineHeight: 1.1,
+        maxWidthLineHeight: 1.2,
+        container: "self"
+      },
+      {
+        target: "#hero p",
+        minWidth: 289,
+        maxWidth: 672,
+        maxWidthFontSize: 1.5,
+        minWidthFontSize: 1.2,
+        minWidthLineHeight: 1.2,
+        maxWidthLineHeight: 1.25,
+        container: "self"
+      },
+      {
+        target: "#avoid-lock-in h2, #open-source h2",
+        minWidth: 320,
+        maxWidth: 720,
+        maxWidthFontSize: 2.0,
+        minWidthFontSize: 1.7,
+        minWidthLineHeight: 1.1,
+        maxWidthLineHeight: 1.2,
+        container: "self"
+      },
+      {
+        target: "#avoid-lock-in p, #open-source p",
+        minWidth: 320,
+        maxWidth: 720,
+        maxWidthFontSize: 1.3,
+        minWidthFontSize: 1.0,
+        minWidthLineHeight: 1.25,
+        maxWidthLineHeight: 1.3,
+        container: "self"
+      },
+      {
+        target: "#performance .content h1",
+        minWidth: 320,
+        maxWidth: 896,
+        maxWidthFontSize: 3.0,
+        minWidthFontSize: 2.4,
+        minWidthLineHeight: 1.0,
+        maxWidthLineHeight: 1.1
+      },
+      {
+        target: "#performance .content p",
+        minWidth: 320,
+        maxWidth: 896,
+        maxWidthFontSize: 1.2,
+        minWidthFontSize: 1.0,
+        minWidthLineHeight: 1.25,
+        maxWidthLineHeight: 1.3
+      },
+      {
+        target: "#features .custom-grid-item h3",
+        minWidth: 205,
+        maxWidth: 500,
+        maxWidthFontSize: 1.4,
+        minWidthFontSize: 1.2,
+        maxWidthLineHeight: 1.1,
+        minWidthLineHeight: 1.0
+      },
+      {
+        target: "#features .custom-grid-item p",
+        minWidth: 205,
+        maxWidth: 500,
+        maxWidthFontSize: 1.4,
+        minWidthFontSize: 0.66,
+        maxWidthLineHeight: 1.2,
+        minWidthLineHeight: 1.25
+      },
+      {
+        target: "#footercol div",
+        minWidth: 288,
+        maxWidth: 1000,
+        maxWidthFontSize: 1.0,
+        minWidthFontSize: 0.9,
+        maxWidthLineHeight: 1.25,
+        minWidthLineHeight: 1.25
+      },
+    ])
+  </script>
+
+</body>
+
+</html>
